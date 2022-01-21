@@ -1,0 +1,31 @@
+@include respond-to(425px) {
+    .principal-banner-container {
+        align-items     : center;
+        padding         : 20px;
+        background-image: url('../../assets/michael-baccin-XopauR-Nagk-unsplash.jpg');
+
+        .principal-banner--list {
+            justify-content: center;
+            padding        : 0;
+        }
+
+        h1,
+        p {
+            max-width : none;
+            text-align: center;
+        }
+    }
+
+    .about-me--text {
+        border: $color-light 1px solid;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    footer {
+
+        .social-media {
+            align-items: flex-start;
+        }
+    }
+}

@@ -1,0 +1,80 @@
+.principal-banner-container {
+    height             : 85vh;
+    display            : flex;
+    flex-direction     : column;
+    justify-content    : center;
+    align-items        : flex-start;
+    gap                : 15px;
+    position           : relative;
+    background         : url('../assets/arnold-francisca-f77Bh3inUpE-unsplash.jpg');
+    background-position: center;
+    background-repeat  : no-repeat;
+    background-size    : cover;
+
+    h1 {
+        font-size  : $font-s-title;
+        font-weight: $font-w-b;
+        box-shadow: -1px 2px white;
+        border-radius: 20px;
+        padding: 0px 10px;
+        
+    }
+
+    p {
+        font-size  : $font-s-text;
+        font-weight: $font-w-l;
+    }
+
+    h1,
+    p {
+        max-width: 40%;
+    }
+
+    .principal-banner--list {
+        display         : flex;
+        position        : absolute;
+        padding-inline  : 9%;
+        top             : 0;
+        align-self      : center;
+        width           : 100%;
+        justify-content : right;
+        gap             : 20px;
+        background-color: rgba(0, 0, 0, 0.52);
+        backdrop-filter : blur(5px);
+
+        li {
+            display: flex;
+
+            a {
+                text-decoration: none;
+                color          : $color-light;
+                font-size      : $font-s-text;
+                font-weight    : $font-w-b;
+                border-bottom  : $color-bg solid 1px;
+                padding        : 10px 20px;
+
+                &:hover {
+                    background-color: $color-dark;
+                }
+            }
+        }
+    }
+
+    &>a {
+        padding         : 7px;
+        background-color: $color-btn-bg;
+        border-radius   : 15px;
+        color           : $color-light;
+        font-size       : $font-s-text;
+        text-decoration : none;
+        font-weight     : $font-w-l;
+        letter-spacing  : 1px;
+
+        // height: auto;
+        &:hover {
+            background-color: $color-btn-bg-hover;
+
+        }
+    }
+
+}

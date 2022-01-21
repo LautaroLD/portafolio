@@ -1,0 +1,142 @@
+.list-proyects-container {
+    display        : flex;
+    gap            : 15px;
+    flex-wrap      : wrap;
+    justify-content: center;
+    padding-block  : 50px;
+    background     : linear-gradient(180deg, rgb(250, 250, 250) 0%, rgb(143, 143, 143) 100%);
+
+    div {
+        display                 : grid;
+        position                : relative;
+        grid-template-columns   : 1fr 1fr;
+        grid-template-rows      : 1fr 1fr;
+        // border               : $font-color-dark 1px solid;
+        border-radius           : 20px;
+        // place-items          : center;
+        height                  : 250px;
+        width                   : 370px;
+        color                   : $color-dark;
+        background-size         : cover;
+        background-repeat       : no-repeat;
+        background-position     : center;
+        box-shadow              : 13px 10px 15px $gray;
+
+        h3 {
+            grid-column     : 1 / 3;
+            grid-row        : 1/ 2;
+            font-size       : $font-s-title - .5;
+            color           : $color-light;
+            background-color: $color-dark;
+            border-radius   : 20px 20px 0 0;
+            padding         : 5px 10px;
+            align-self      : flex-start;
+            width           : 100%;
+            text-align      : center;
+        }
+
+        .proyects-btns {
+            display            : flex;
+            position           : absolute;
+            place-self         : center;
+            width              : 75%;
+            text-align         : center;
+            overflow           : hidden;
+            height             : 35%;
+            // background-color: $color-btn-bg;
+            // border-radius   : 15px;
+            border             : 1px solid $color-light;
+
+            background-color: rgba(37, 37, 37, 0.424);
+            backdrop-filter : blur(5px);
+            color           : $color-light;
+            font-size       : $font-s-text;
+            text-decoration : none;
+            justify-content : center;
+            align-items     : center;
+            font-weight     : $font-w-l;
+            animation       : look .6s linear;
+
+            &:hover {
+                background-color: $color-btn-bg-hover;
+
+            }
+        }
+
+        .proyects-btns-none {
+            display: none;
+        }
+
+        // &:hover {
+        //     a {
+        //     }
+        // }
+
+        @keyframes look {
+            0% {
+                width : 0;
+                height: 0;
+            }
+
+            25% {
+                width : 25%;
+                height: 15%;
+
+
+            }
+
+            50% {
+                width : 50%;
+                height: 25%;
+
+            }
+
+            75% {
+                width : 65%;
+                height: 30%;
+
+            }
+
+            100% {
+                width : 75%;
+                height: 35%;
+
+            }
+        }
+
+        #visit-btn {
+            // justify-self              : center;
+            grid-column: 1 / 2;
+            grid-row   : 2/ 3;
+
+        }
+
+        #repo-btn {
+
+            // justify-self: center;
+            grid-column: 2 / 3;
+            grid-row   : 2 / 3;
+        }
+    }
+
+    .login-register {
+        background-image: url('../assets/log-reg.png');
+    }
+
+    .e-commerce-product {
+        background-image: url('../assets/e-commerce-product.png');
+
+    }
+
+    .Room-homepage {
+        background-image: url('../assets/roomhomepage.png');
+    }
+
+    .Manage-landing-page {
+        background-image: url('../assets/manage-landing.png');
+    }
+
+    .Todo-app {
+        background-image: url('../assets/todo-app.png');
+    }
+}
