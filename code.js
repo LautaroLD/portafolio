@@ -33,12 +33,10 @@ function btnsVisible() {
     let btns = document.getElementsByClassName('btns')
     let listBtns = []
     listBtns = [...btns]
-    console.log(listBtns)
     listBtns.forEach(elem => {
         let position = elem.parentElement.getBoundingClientRect()
         if (position.bottom < screen.height && position.bottom > 0) {
             elem.classList.replace('proyects-btns-none', 'proyects-btns')
-            console.log(position.bottom, elem)
         } else if (position.bottom > screen.height) {
             elem.classList.replace('proyects-btns', 'proyects-btns-none')
         }
