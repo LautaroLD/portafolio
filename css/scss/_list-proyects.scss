@@ -18,7 +18,9 @@
 
     hr {
         min-width: 100vw;
-        height   : 2px;
+        height   : 1px;
+        border-color: $color-bg;
+        background-color: $color-bg;
     }
 
     div {
@@ -70,7 +72,7 @@
             justify-content : center;
             align-items     : center;
             font-weight     : $font-w-l;
-            animation       : look .6s linear;
+            animation       : look .8s steps(30);
 
             &:hover {
                 background-color: $color-btn-bg-hover;
@@ -83,35 +85,39 @@
         }
 
         @keyframes look {
-            0% {
-                width : 0;
+            from {
+                width: 0;
                 height: 0;
             }
+            // 0% {
+            //     width : 0;
+            //     height: 0;
+            // }
 
-            25% {
-                width : 25%;
-                height: 15%;
+            // 25% {
+            //     width : 25%;
+            //     height: 15%;
 
 
-            }
+            // }
 
-            50% {
-                width : 50%;
-                height: 25%;
+            // 50% {
+            //     width : 50%;
+            //     height: 25%;
 
-            }
+            // }
 
-            75% {
-                width : 65%;
-                height: 30%;
+            // 75% {
+            //     width : 65%;
+            //     height: 30%;
 
-            }
+            // }
 
-            100% {
-                width : 75%;
-                height: 35%;
+            // 100% {
+            //     width : 75%;
+            //     height: 35%;
 
-            }
+            // }
         }
 
         #visit-btn {
@@ -127,23 +133,23 @@
     }
 
     .login-register {
-        background-image: url('../assets/log-reg.png');
+        background-image: url('../assets/log-reg.webp');
     }
 
     .e-commerce-product {
-        background-image: url('../assets/e-commerce-product.png');
+        background-image: url('../assets/e-commerce-product.webp');
 
     }
 
     .Room-homepage {
-        background-image: url('../assets/roomhomepage.png');
+        background-image: url('../assets/roomhomepage.webp');
     }
 
     .Manage-landing-page {
-        background-image: url('../assets/manage-landing.png');
+        background-image: url('../assets/manage-landing.webp');
     }
 
     .Todo-app {
-        background-image: url('../assets/todo-app.png');
+        background-image: url('../assets/todo-app.webp');
     }
 }

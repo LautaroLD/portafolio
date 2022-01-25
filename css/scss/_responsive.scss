@@ -2,7 +2,7 @@
     .principal-banner-container {
         align-items     : center;
         padding         : 20px;
-        background-image: url('../assets/michael-baccin-XopauR-Nagk-unsplash.jpg');
+        background-image: url('../assets/michael-baccin-XopauR-Nagk-unsplash.webp');
 
         .principal-banner--list {
             justify-content: center;
@@ -17,10 +17,10 @@
     }
 
     .about-me--text {
-        border: $color-light 1px solid;
-        padding: 15px;
+        border       : $color-light 1px solid;
+        padding      : 15px;
         border-radius: 10px;
-        max-width: none;
+        max-width    : none;
     }
 
     footer {
@@ -30,7 +30,16 @@
         }
     }
 }
+
 @include respond-to (768px) {
+    .principal-banner-container {
+
+        h1,
+        p {
+            max-width: none;
+        }
+    }
+
     .about-me--text {
         max-width: none;
     }

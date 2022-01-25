@@ -6,18 +6,33 @@
     align-items        : flex-start;
     gap                : 15px;
     position           : relative;
-    background         : url('../assets/arnold-francisca-f77Bh3inUpE-unsplash.jpg');
+    background         : url('../assets/arnold-francisca-f77Bh3inUpE-unsplash.webp');
     background-position: center;
     background-repeat  : no-repeat;
     background-size    : cover;
 
     h1 {
-        font-size  : $font-s-title;
-        font-weight: $font-w-b;
-        box-shadow: -1px 2px white;
-        border-radius: 20px;
-        padding: 0px 10px;
-        
+        font-size    : $font-s-title;
+        font-weight  : $font-w-b;
+        border-right: 2px solid transparent;
+        width: 10ch;
+        padding-right: 5px;
+        letter-spacing: 3px;
+        overflow: hidden;
+        // white-space  : nowrap;
+        animation    : type 2s steps(10), blink .5s 10 step-end alternate;
+    }
+
+    @keyframes type {
+        from {
+            width: 0;
+        }
+    }
+
+    @keyframes blink {
+        50% {
+            border-color: white;
+        }
     }
 
     p {

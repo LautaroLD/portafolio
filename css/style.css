@@ -25,7 +25,7 @@ html body main section {
   align-items: flex-start;
   gap: 15px;
   position: relative;
-  background: url("../assets/arnold-francisca-f77Bh3inUpE-unsplash.jpg");
+  background: url("../assets/arnold-francisca-f77Bh3inUpE-unsplash.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -33,9 +33,22 @@ html body main section {
 .principal-banner-container h1 {
   font-size: 3rem;
   font-weight: 700;
-  box-shadow: -1px 2px white;
-  border-radius: 20px;
-  padding: 0px 10px;
+  border-right: 2px solid transparent;
+  width: 10ch;
+  padding-right: 5px;
+  letter-spacing: 3px;
+  overflow: hidden;
+  animation: type 2s steps(10), blink 0.5s 10 step-end alternate;
+}
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: white;
+  }
 }
 .principal-banner-container p {
   font-size: 1.9rem;
@@ -133,7 +146,9 @@ html body main section {
 }
 .list-proyects-container hr {
   min-width: 100vw;
-  height: 2px;
+  height: 1px;
+  border-color: #4564c2;
+  background-color: #4564c2;
 }
 .list-proyects-container div {
   display: grid;
@@ -179,7 +194,7 @@ html body main section {
   justify-content: center;
   align-items: center;
   font-weight: 400;
-  animation: look 0.6s linear;
+  animation: look 0.8s steps(30);
 }
 .list-proyects-container div .proyects-btns:hover {
   background-color: #00008b;
@@ -188,25 +203,9 @@ html body main section {
   display: none;
 }
 @keyframes look {
-  0% {
+  from {
     width: 0;
     height: 0;
-  }
-  25% {
-    width: 25%;
-    height: 15%;
-  }
-  50% {
-    width: 50%;
-    height: 25%;
-  }
-  75% {
-    width: 65%;
-    height: 30%;
-  }
-  100% {
-    width: 75%;
-    height: 35%;
   }
 }
 .list-proyects-container div #visit-btn {
@@ -218,19 +217,19 @@ html body main section {
   grid-row: 2/3;
 }
 .list-proyects-container .login-register {
-  background-image: url("../assets/log-reg.png");
+  background-image: url("../assets/log-reg.webp");
 }
 .list-proyects-container .e-commerce-product {
-  background-image: url("../assets/e-commerce-product.png");
+  background-image: url("../assets/e-commerce-product.webp");
 }
 .list-proyects-container .Room-homepage {
-  background-image: url("../assets/roomhomepage.png");
+  background-image: url("../assets/roomhomepage.webp");
 }
 .list-proyects-container .Manage-landing-page {
-  background-image: url("../assets/manage-landing.png");
+  background-image: url("../assets/manage-landing.webp");
 }
 .list-proyects-container .Todo-app {
-  background-image: url("../assets/todo-app.png");
+  background-image: url("../assets/todo-app.webp");
 }
 
 footer {
@@ -265,7 +264,7 @@ footer .social-media li a {
   .principal-banner-container {
     align-items: center;
     padding: 20px;
-    background-image: url("../assets/michael-baccin-XopauR-Nagk-unsplash.jpg");
+    background-image: url("../assets/michael-baccin-XopauR-Nagk-unsplash.webp");
   }
   .principal-banner-container .principal-banner--list {
     justify-content: center;
@@ -289,6 +288,11 @@ footer .social-media li a {
   }
 }
 @media only screen and (max-width: 768px) {
+  .principal-banner-container h1,
+.principal-banner-container p {
+    max-width: none;
+  }
+
   .about-me--text {
     max-width: none;
   }
