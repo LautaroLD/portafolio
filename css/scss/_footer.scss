@@ -1,27 +1,29 @@
 footer {
-    background-color: $color-dark;
-    padding         : 0 20px;
-
-    padding: 20px;
+    background-color   : $color-dark;
+    padding            : 50px 20px;
+    // padding         : 20px;
 
     .social-media {
-        display          : flex;
-        flex-direction   : column;
-        gap              : 30px;
-        height           : auto;
-        width            : auto;
+        display       : flex;
+        flex-direction: column;
+        gap           : 30px;
+        height        : auto;
+        width         : auto;
 
         li {
             display    : flex;
             align-items: center;
-            gap: 15px;
+            gap        : 15px;
+
             a,
-            p, .bx {
-                color    : $color-light;
-                font-size: $font-s-text;
+            p,
+            .bx {
+                color      : $color-light;
+                font-size  : $font-s-text;
                 font-family: $font-f;
                 line-height: 1;
             }
+
             a {
                 text-decoration: none;
             }

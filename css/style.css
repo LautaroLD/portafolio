@@ -91,7 +91,7 @@ html body main section {
   width: 100%;
   color: #ffffff;
   background-color: #4564c2;
-  padding-block: 30px;
+  padding-block: 50px;
 }
 .about-me--title {
   font-size: 3rem;
@@ -103,6 +103,7 @@ html body main section {
   font-weight: 400;
   margin-bottom: 30px;
   line-height: 1.8;
+  max-width: 50%;
 }
 .about-me--btn {
   font-size: 1.9rem;
@@ -121,8 +122,18 @@ html body main section {
   gap: 15px;
   flex-wrap: wrap;
   justify-content: center;
-  padding-block: 50px;
+  padding-block: 15px 50px;
   background: linear-gradient(180deg, #fafafa 0%, #8f8f8f 100%);
+}
+.list-proyects-container h2 {
+  font-size: 4rem;
+  min-width: 100vw;
+  color: #292929;
+  text-align: center;
+}
+.list-proyects-container hr {
+  min-width: 100vw;
+  height: 2px;
 }
 .list-proyects-container div {
   display: grid;
@@ -159,7 +170,7 @@ html body main section {
   overflow: hidden;
   height: 35%;
   border: 1px solid #ffffff;
-  background-color: rgba(37, 37, 37, 0.424);
+  background-color: rgba(37, 37, 37, 0.664);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   color: #ffffff;
@@ -224,8 +235,7 @@ html body main section {
 
 footer {
   background-color: #292929;
-  padding: 0 20px;
-  padding: 20px;
+  padding: 50px 20px;
 }
 footer .social-media {
   display: flex;
@@ -240,7 +250,8 @@ footer .social-media li {
   gap: 15px;
 }
 footer .social-media li a,
-footer .social-media li p, footer .social-media li .bx {
+footer .social-media li p,
+footer .social-media li .bx {
   color: #ffffff;
   font-size: 1.9rem;
   font-family: "Oswald", sans-serif;
@@ -270,9 +281,15 @@ footer .social-media li a {
     border: #ffffff 1px solid;
     padding: 15px;
     border-radius: 10px;
+    max-width: none;
   }
 
   footer .social-media {
     align-items: flex-start;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .about-me--text {
+    max-width: none;
   }
 }

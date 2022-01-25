@@ -3,7 +3,7 @@
     width           : 100%;
     color           : $color-light;
     background-color: $color-bg;
-    padding-block   : 30px;
+    padding-block   : 50px;
 
     &--title {
         font-size  : $font-s-title;
@@ -16,6 +16,7 @@
         font-weight  : $font-w-l;
         margin-bottom: 30px;
         line-height  : 1.8;
+        max-width: 50%;
     }
 
     &--btn {
