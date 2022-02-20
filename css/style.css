@@ -233,31 +233,53 @@ html body main section {
 }
 
 footer {
-  background-color: #292929;
-  padding: 50px 20px;
+  background: radial-gradient(circle, #5a5a5a 0%, black 100%);
+  padding: 30px 20px 0;
 }
 footer .social-media {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 30px;
   height: auto;
   width: auto;
 }
+footer .social-media .social-items {
+  display: inline;
+  font-size: 3.9rem;
+}
+footer .social-media .mail-item {
+  grid-area: 2/1/3/3;
+  justify-self: center;
+  font-size: 1.9rem;
+  gap: 5px;
+}
+footer .social-media .mail-item p {
+  letter-spacing: 2px;
+}
+footer .social-media .social-linkedin {
+  grid-area: 1/1/2/2;
+  justify-self: right;
+}
 footer .social-media li {
   display: flex;
   align-items: center;
-  gap: 15px;
 }
 footer .social-media li a,
 footer .social-media li p,
 footer .social-media li .bx {
   color: #ffffff;
-  font-size: 1.9rem;
   font-family: "Oswald", sans-serif;
   line-height: 1;
 }
 footer .social-media li a {
   text-decoration: none;
+}
+footer .footer-text {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #a8a8a8;
 }
 
 @media only screen and (max-width: 425px) {

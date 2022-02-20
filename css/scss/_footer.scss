@@ -1,25 +1,51 @@
 footer {
-    background-color   : $color-dark;
-    padding            : 50px 20px;
-    // padding         : 20px;
+    // background-color: $color-dark;
+    background: radial-gradient(circle, rgb(90, 90, 90) 0%, rgba(0, 0, 0, 1) 100%);
+    padding   : 30px 20px 0;
+
 
     .social-media {
-        display       : flex;
-        flex-direction: column;
-        gap           : 30px;
-        height        : auto;
-        width         : auto;
+        display              : grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows   : 1fr 1fr;
+        // justify-content: center;
+        // flex-direction: column;
+        gap                  : 30px;
+        height               : auto;
+        width                : auto;
+
+        .social-items {
+            display  : inline;
+            font-size: $font-s-text + 2;
+
+        }
+
+        .mail-item {
+            grid-area   : 2 / 1 / 3 / 3;
+            justify-self: center;
+            font-size   : $font-s-text;
+            gap         : 5px;
+
+            p {
+                letter-spacing: 2px;
+            }
+
+        }
+
+        .social-linkedin {
+            grid-area   : 1 / 1 / 2 / 2;
+            justify-self: right;
+
+        }
 
         li {
             display    : flex;
             align-items: center;
-            gap        : 15px;
 
             a,
             p,
             .bx {
                 color      : $color-light;
-                font-size  : $font-s-text;
                 font-family: $font-f;
                 line-height: 1;
             }
@@ -28,5 +54,12 @@ footer {
                 text-decoration: none;
             }
         }
+    }
+
+    .footer-text {
+        text-align : center;
+        font-size  : $font-s-text - .3;
+        font-weight: $font-w-l;
+        color      : $gray;
     }
 }
