@@ -1,32 +1,38 @@
 {
+    "Task-manager": {
+        "name": "Task manager (React)",
+        "url": "https://lautarold.github.io/task-manager/",
+        "repository": "https://github.com/LautaroLD/task-manager",
+        "img": "./assets/task-manager.webp"
+    },
     "login-register": {
         "name": "Login/Register Chessking",
         "url": "https://lautarold.github.io/log-reg/",
         "repository": "https://github.com/LautaroLD/log-reg",
-        "img": "./assets/log-reg.png"
+        "img": "./assets/log-reg.webp"
     },
     "e-commerce-product": {
         "name": "E-commerce product page",
         "url": "https://lautarold.github.io/e-commerce-product/",
         "repository": "https://github.com/LautaroLD/e-commerce-product",
-        "img": ""
+        "img": "./assets/e-commerce-product.webp"
     },
     "Manage-landing-page": {
         "name": "Manage landing page",
-        "url": "https://lautarold.github.io/manage-landing-/",
-        "repository": "https://github.com/LautaroLD/manage-landing-/tree/master",
-        "img": ""
+        "url": "https://lautarold.github.io/manage-landing/",
+        "repository": "https://github.com/LautaroLD/manage-landing/",
+        "img": "./assets/manage-landing.webp"
     },
     "Room-homepage": {
         "name": "Room homepage",
         "url": "https://lautarold.github.io/roomhomepage/",
         "repository": "https://github.com/LautaroLD/roomhomepage",
-        "img": ""
+        "img": "./assets/roomhomepage.webp"
     },
     "Todo-app": {
         "name": "Todo app",
         "url": "https://lautarold.github.io/todo-app/",
         "repository": "https://github.com/LautaroLD/todo-app",
-        "img": ""
+        "img": "./assets/todo-app.webp"
     }
 }

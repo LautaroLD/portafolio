@@ -1,10 +1,10 @@
 .list-proyects-container {
-    display           : flex;
-    gap               : 15px;
-    flex-wrap         : wrap;
-    justify-content   : center;
+    display        : flex;
+    gap            : 15px;
+    flex-wrap      : wrap;
+    justify-content: center;
     padding-block  : 15px 50px;
-    background        : linear-gradient(180deg, rgb(250, 250, 250) 0%, rgb(143, 143, 143) 100%);
+    background     : linear-gradient(180deg, rgb(250, 250, 250) 0%, rgb(143, 143, 143) 100%);
 
     h2 {
         font-size         : $font-s-title + 1;
@@ -17,9 +17,9 @@
     }
 
     hr {
-        min-width: 100vw;
-        height   : 1px;
-        border-color: $color-bg;
+        min-width       : 100vw;
+        height          : 1px;
+        border-color    : $color-bg;
         background-color: $color-bg;
     }
 
@@ -37,7 +37,7 @@
         background-size         : cover;
         background-repeat       : no-repeat;
         background-position     : center;
-        box-shadow              : 13px 10px 15px $gray;
+        box-shadow              : 13px 10px 15px $color-gray;
 
         h3 {
             grid-column     : 1 / 3;
@@ -86,9 +86,10 @@
 
         @keyframes look {
             from {
-                width: 0;
+                width : 0;
                 height: 0;
             }
+
             // 0% {
             //     width : 0;
             //     height: 0;
@@ -130,26 +131,5 @@
             grid-column: 2 / 3;
             grid-row   : 2 / 3;
         }
-    }
-
-    .login-register {
-        background-image: url('../assets/log-reg.webp');
-    }
-
-    .e-commerce-product {
-        background-image: url('../assets/e-commerce-product.webp');
-
-    }
-
-    .Room-homepage {
-        background-image: url('../assets/roomhomepage.webp');
-    }
-
-    .Manage-landing-page {
-        background-image: url('../assets/manage-landing.webp');
-    }
-
-    .Todo-app {
-        background-image: url('../assets/todo-app.webp');
     }
 }

@@ -216,24 +216,9 @@ html body main section {
   grid-column: 2/3;
   grid-row: 2/3;
 }
-.list-proyects-container .login-register {
-  background-image: url("../assets/log-reg.webp");
-}
-.list-proyects-container .e-commerce-product {
-  background-image: url("../assets/e-commerce-product.webp");
-}
-.list-proyects-container .Room-homepage {
-  background-image: url("../assets/roomhomepage.webp");
-}
-.list-proyects-container .Manage-landing-page {
-  background-image: url("../assets/manage-landing.webp");
-}
-.list-proyects-container .Todo-app {
-  background-image: url("../assets/todo-app.webp");
-}
 
 footer {
-  background: radial-gradient(circle, #5a5a5a 0%, black 100%);
+  background: radial-gradient(circle, #4e4e4e 0%, black 100%);
   padding: 30px 20px 0;
 }
 footer .social-media {
@@ -276,10 +261,14 @@ footer .social-media li a {
   text-decoration: none;
 }
 footer .footer-text {
+  margin-top: 15px;
   text-align: center;
   font-size: 1.6rem;
   font-weight: 400;
   color: #a8a8a8;
+}
+footer .footer-text > a {
+  color: #77b5fe;
 }
 
 @media only screen and (max-width: 425px) {

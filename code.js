@@ -1,8 +1,11 @@
-function pushElement(classElem, name, sitio, repo) {
+function pushElement(classElem, name, sitio, repo, imageBg) {
     let cont = document.getElementById('list-proyects-container')
     let div = Object.assign(document.createElement('DIV'), {
-        className: `${classElem} proyect`
+        className: `${classElem} proyect`,
+        
     })
+    div.style.backgroundImage = `url("${imageBg}")`
+    console.log(imageBg)
     let title = Object.assign(document.createElement('H3'), {
         textContent: name
     })
@@ -29,7 +32,7 @@ async function getProyects() {
         .then(response => response.json())
         .then(data => {
             list = Object.entries(data)
-            list.forEach(element => pushElement(element[0], element[1].name, element[1].url, element[1].repository,))
+            list.forEach(element => pushElement(element[0], element[1].name, element[1].url, element[1].repository,element[1].img))
         })
         .catch((err) => new Error(err))
     elementsVisible()
