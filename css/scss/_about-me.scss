@@ -1,34 +1,109 @@
-.about-me {
+.about-me-section {
+    // position        : relative;
     height          : auto;
     width           : 100%;
     color           : $color-light;
     background-color: $color-bg;
-    padding-block   : 50px;
+    padding-block   : 10px;
+
+
+}
+
+.about-me {
+    display       : flex;
+    flex-direction: column;
+    gap           : 10px;
+    height        : 100%;
+    width         : 100%;
+    position      : relative;
 
     &--title {
-        font-size  : $font-s-title;
-        font-weight: $font-w-b;
-        margin-bottom: 15px;
+
+        position           : relative;
+        // top             : 0;
+        left               : -100%;
+        font-size          : $font-s-title;
+        font-weight        : $font-w-b;
+        // margin-bottom: 15px;
     }
 
     &--text {
-        font-size    : $font-s-text;
-        font-weight  : $font-w-l;
-        margin-bottom: 30px;
-        line-height  : 1.8;
-        max-width: 50%;
+
+        position             : relative;
+        // top               : 50px;
+        left                 : -120%;
+        font-size            : $font-s-text;
+        font-weight          : $font-w-l;
+        // margin-bottom  : 30px;
+        // margin-right: 100%;
+        height               : auto;
+        line-height          : 1.8;
+        max-width            : 50%;
     }
 
     &--btn {
-        font-size      : $font-s-text;
-        font-weight    : $font-w-l;
-        color          : $color-light;
-        text-decoration: none;
-        border         : 1px solid $color-light;
-        padding        : 10px 20px;
+
+        position          : relative;
+        // top            : 220px;
+        bottom            : 0;
+        left              : -100%;
+        font-size         : $font-s-text;
+        font-weight       : $font-w-l;
+        color             : $color-light;
+        text-decoration   : none;
+        border            : 1px solid $color-light;
+        padding           : 10px 20px;
+        width             : fit-content;
 
         &:hover {
             background-color: $color-btn-bg-hover;
         }
+    }
+}
+
+.see-aboutMe {
+    h2 {
+        animation: enterTitle 1s ease-out forwards;
+
+    }
+
+    p {
+        animation: enterText 1s .8s ease-out forwards;
+
+    }
+
+    a {
+        animation: enterBtn 1s 1s ease-out forwards;
+
+    }
+}
+
+@keyframes enterTitle {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 0%;
+    }
+}
+
+@keyframes enterText {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 0%;
+    }
+}
+
+@keyframes enterBtn {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 0%;
     }
 }

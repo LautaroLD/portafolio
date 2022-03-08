@@ -99,37 +99,88 @@ html body main section {
   background-color: #00008b;
 }
 
-.about-me {
+.about-me-section {
   height: auto;
   width: 100%;
   color: #ffffff;
   background-color: #4564c2;
-  padding-block: 50px;
+  padding-block: 10px;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 .about-me--title {
+  position: relative;
+  left: -100%;
   font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 15px;
 }
 .about-me--text {
+  position: relative;
+  left: -120%;
   font-size: 1.9rem;
   font-weight: 400;
-  margin-bottom: 30px;
+  height: auto;
   line-height: 1.8;
   max-width: 50%;
 }
 .about-me--btn {
+  position: relative;
+  bottom: 0;
+  left: -100%;
   font-size: 1.9rem;
   font-weight: 400;
   color: #ffffff;
   text-decoration: none;
   border: 1px solid #ffffff;
   padding: 10px 20px;
+  width: -webkit-fit-content;
+  width: fit-content;
 }
 .about-me--btn:hover {
   background-color: #00008b;
 }
 
+.see-aboutMe h2 {
+  animation: enterTitle 1s ease-out forwards;
+}
+.see-aboutMe p {
+  animation: enterText 1s 0.8s ease-out forwards;
+}
+.see-aboutMe a {
+  animation: enterBtn 1s 1s ease-out forwards;
+}
+
+@keyframes enterTitle {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+@keyframes enterText {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+@keyframes enterBtn {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0%;
+  }
+}
 .list-proyects-container {
   display: flex;
   gap: 15px;

@@ -1,6 +1,6 @@
 {
     "Task-manager": {
-        "name": "Task manager (React)",
+        "name": "Task manager",
         "url": "https://lautarold.github.io/task-manager/",
         "repository": "https://github.com/LautaroLD/task-manager",
         "img": "./assets/task-manager.webp"
