@@ -1,12 +1,9 @@
 .about-me-section {
-    // position        : relative;
     height          : auto;
     width           : 100%;
     color           : $color-light;
     background-color: $color-bg;
-    padding-block   : 10px;
-
-
+    padding: 5%;
 }
 
 .about-me {
@@ -20,22 +17,17 @@
     &--title {
 
         position           : relative;
-        // top             : 0;
         left               : -100%;
         font-size          : $font-s-title;
         font-weight        : $font-w-b;
-        // margin-bottom: 15px;
     }
 
     &--text {
 
         position             : relative;
-        // top               : 50px;
         left                 : -120%;
         font-size            : $font-s-text;
         font-weight          : $font-w-l;
-        // margin-bottom  : 30px;
-        // margin-right: 100%;
         height               : auto;
         line-height          : 1.8;
         max-width            : 50%;
@@ -44,7 +36,6 @@
     &--btn {
 
         position          : relative;
-        // top            : 220px;
         bottom            : 0;
         left              : -100%;
         font-size         : $font-s-text;
@@ -68,12 +59,12 @@
     }
 
     p {
-        animation: enterText 1s .8s ease-out forwards;
+        animation: enterText 1s .6s ease-out forwards;
 
     }
 
     a {
-        animation: enterBtn 1s 1s ease-out forwards;
+        animation: enterBtn 1s .7s ease-out forwards;
 
     }
 }

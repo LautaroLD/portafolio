@@ -1,4 +1,10 @@
 {
+    "Rock-Paper-Scissors": {
+        "name": "Rock Paper Scissors",
+        "url": "https://lautarold.github.io/r-p-s/",
+        "repository": "https://github.com/LautaroLD/r-p-s",
+        "img": "./assets/r-p-s.webp"
+    },
     "Task-manager": {
         "name": "Task manager",
         "url": "https://lautarold.github.io/task-manager/",

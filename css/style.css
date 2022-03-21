@@ -13,28 +13,22 @@ html {
 html body {
   color: #ffffff;
 }
-html body main section {
-  padding-inline: 9%;
-}
 
-.principal-banner-container {
+.header-container {
   height: 85vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 15px;
-  position: relative;
   background: url("../assets/arnold-francisca-f77Bh3inUpE-unsplash.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.principal-banner-container h1 {
+.header-container h1 {
   font-size: 3rem;
   font-weight: 700;
   border-right: 2px solid transparent;
   width: 10ch;
+  margin-top: auto;
   padding-right: 5px;
   letter-spacing: 3px;
   overflow: hidden;
@@ -50,31 +44,33 @@ html body main section {
     border-color: white;
   }
 }
-.principal-banner-container p {
+.header-container p {
   font-size: 1.9rem;
   font-weight: 400;
+  margin-bottom: auto;
 }
-.principal-banner-container h1,
-.principal-banner-container p {
+.header-container h1,
+.header-container p {
   max-width: 40%;
+  margin-inline: 10%;
 }
-.principal-banner-container .principal-banner--list {
+.header-container .header-list {
   display: flex;
-  position: absolute;
+  position: sticky;
   padding-inline: 9%;
   top: 0;
-  align-self: center;
+  left: 0;
   width: 100%;
   justify-content: right;
   gap: 20px;
-  background-color: rgba(0, 0, 0, 0.52);
+  background-color: rgba(27, 27, 27, 0.726);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
 }
-.principal-banner-container .principal-banner--list li {
+.header-container .header-list li {
   display: flex;
 }
-.principal-banner-container .principal-banner--list li a {
+.header-container .header-list li a {
   text-decoration: none;
   color: #ffffff;
   font-size: 1.9rem;
@@ -82,21 +78,8 @@ html body main section {
   border-bottom: #4564c2 solid 1px;
   padding: 10px 20px;
 }
-.principal-banner-container .principal-banner--list li a:hover {
+.header-container .header-list li a:hover {
   background-color: #292929;
-}
-.principal-banner-container > a {
-  padding: 7px;
-  background-color: #77b5fe;
-  border-radius: 15px;
-  color: #ffffff;
-  font-size: 1.9rem;
-  text-decoration: none;
-  font-weight: 400;
-  letter-spacing: 1px;
-}
-.principal-banner-container > a:hover {
-  background-color: #00008b;
 }
 
 .about-me-section {
@@ -104,7 +87,7 @@ html body main section {
   width: 100%;
   color: #ffffff;
   background-color: #4564c2;
-  padding-block: 10px;
+  padding: 5%;
 }
 
 .about-me {
@@ -151,10 +134,10 @@ html body main section {
   animation: enterTitle 1s ease-out forwards;
 }
 .see-aboutMe p {
-  animation: enterText 1s 0.8s ease-out forwards;
+  animation: enterText 1s 0.6s ease-out forwards;
 }
 .see-aboutMe a {
-  animation: enterBtn 1s 1s ease-out forwards;
+  animation: enterBtn 1s 0.7s ease-out forwards;
 }
 
 @keyframes enterTitle {
@@ -323,17 +306,16 @@ footer .footer-text > a {
 }
 
 @media only screen and (max-width: 425px) {
-  .principal-banner-container {
+  .header-container {
     align-items: center;
-    padding: 20px;
     background-image: url("../assets/michael-baccin-XopauR-Nagk-unsplash.webp");
   }
-  .principal-banner-container .principal-banner--list {
+  .header-container .header-list {
     justify-content: center;
     padding: 0;
   }
-  .principal-banner-container h1,
-.principal-banner-container p {
+  .header-container h1,
+.header-container p {
     max-width: none;
     text-align: center;
   }
@@ -350,11 +332,6 @@ footer .footer-text > a {
   }
 }
 @media only screen and (max-width: 768px) {
-  .principal-banner-container h1,
-.principal-banner-container p {
-    max-width: none;
-  }
-
   .about-me--text {
     max-width: none;
   }
