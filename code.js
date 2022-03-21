@@ -5,7 +5,6 @@ function pushElement(classElem, name, sitio, repo, imageBg) {
 
     })
     div.style.backgroundImage = `url("${imageBg}")`
-    console.log(imageBg)
     let title = Object.assign(document.createElement('H3'), {
         textContent: name
     })
