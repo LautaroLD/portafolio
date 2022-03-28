@@ -1,4 +1,10 @@
 {
+    "Api-countries": {
+        "name": "Api countries",
+        "url": "https://lautarold.github.io/rest-countries-api/",
+        "repository": "https://github.com/LautaroLD/rest-countries-api",
+        "img": "./assets/rest-countries-api.webp"
+    },
     "Rock-Paper-Scissors": {
         "name": "Rock Paper Scissors",
         "url": "https://lautarold.github.io/r-p-s/",
