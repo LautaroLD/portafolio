@@ -42,7 +42,7 @@ function pushElement(classElem, name, sitio, repo, imageBg) {
     cont.append(col)
 }
 let list = []
-fetch(`/assets/proyects.json`)
+fetch('./assets/proyects.json')
     .then(response => response.json())
     .then(data => {
         list = Object.entries(data)
