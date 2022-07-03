@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 * {
   margin: 0%;
   padding: 0%;
@@ -7,248 +8,182 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Oswald", sans-serif;
-  min-width: 375px;
+  font-family: "Archivo", sans-serif;
+  scroll-behavior: smooth;
 }
 html body {
-  color: #ffffff;
+  background-color: #eeeeee;
+  position: relative;
 }
 
-.header-container {
-  height: 85vh;
+header .header-content {
   display: flex;
   flex-direction: column;
-  background: url("../assets/arnold-francisca-f77Bh3inUpE-unsplash.webp");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.header-container h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  border-right: 2px solid transparent;
-  width: 10ch;
-  margin-top: auto;
-  padding-right: 5px;
-  letter-spacing: 3px;
-  overflow: hidden;
-  animation: type 2s steps(10), blink 0.5s 10 step-end alternate;
-}
-@keyframes type {
-  from {
-    width: 0;
-  }
-}
-@keyframes blink {
-  50% {
-    border-color: white;
-  }
-}
-.header-container p {
-  font-size: 1.9rem;
-  font-weight: 400;
-  margin-bottom: auto;
-}
-.header-container h1,
-.header-container p {
-  max-width: 40%;
-  margin-inline: 10%;
-}
-.header-container .header-list {
-  display: flex;
-  position: sticky;
-  padding-inline: 9%;
-  top: 0;
-  left: 0;
-  width: 100%;
-  justify-content: right;
-  gap: 20px;
-  background-color: rgba(27, 27, 27, 0.726);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-}
-.header-container .header-list li {
-  display: flex;
-}
-.header-container .header-list li a {
-  text-decoration: none;
+  position: relative;
+  background: #4564c2;
+  border: #ffffff 10px double;
   color: #ffffff;
-  font-size: 1.9rem;
-  font-weight: 700;
-  border-bottom: #4564c2 solid 1px;
-  padding: 10px 20px;
+  padding: 15px;
+  gap: 10px;
+  padding-top: 50px;
+  text-align: center;
 }
-.header-container .header-list li a:hover {
-  background-color: #292929;
+header .header-content h1 {
+  font-size: 3rem;
+}
+header .header-content p {
+  font-size: 1.5rem;
 }
 
-.about-me-section {
-  height: auto;
+.nav {
+  position: sticky;
+  top: 0%;
+  z-index: 100;
   width: 100%;
+}
+.nav__list {
+  width: 100%;
+  display: flex;
+  gap: 5%;
+  list-style: none;
+  justify-content: center;
+  background-color: #a1a1a1;
+  margin-bottom: 0%;
+  padding-left: 0%;
+}
+.nav__list--item {
+  display: flex;
+}
+.nav__list--item a {
+  font-size: 1.5rem;
+  font-weight: 700;
   color: #ffffff;
-  background-color: #4564c2;
-  padding: 5%;
+  border-bottom: #ffffff solid 1px;
+  padding: 7px 10px;
+  text-decoration: none;
+}
+.nav__list--item a:hover {
+  color: #292929;
+  background-color: #eeeeee;
+  cursor: pointer;
 }
 
 .about-me {
+  background: linear-gradient(160deg, #4564c2 70%, #292929 70%);
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-.about-me--title {
-  position: relative;
-  left: -100%;
-  font-size: 3rem;
-  font-weight: 700;
-}
-.about-me--text {
-  position: relative;
-  left: -120%;
-  font-size: 1.9rem;
-  font-weight: 400;
-  height: auto;
-  line-height: 1.8;
-  max-width: 50%;
-}
-.about-me--btn {
-  position: relative;
-  bottom: 0;
-  left: -100%;
-  font-size: 1.9rem;
-  font-weight: 400;
-  color: #ffffff;
-  text-decoration: none;
-  border: 1px solid #ffffff;
-  padding: 10px 20px;
-  width: -webkit-fit-content;
-  width: fit-content;
-}
-.about-me--btn:hover {
-  background-color: #00008b;
-}
-
-.see-aboutMe h2 {
-  animation: enterTitle 1s ease-out forwards;
-}
-.see-aboutMe p {
-  animation: enterText 1s 0.6s ease-out forwards;
-}
-.see-aboutMe a {
-  animation: enterBtn 1s 0.7s ease-out forwards;
-}
-
-@keyframes enterTitle {
-  from {
-    left: -100%;
-  }
-  to {
-    left: 0%;
-  }
-}
-@keyframes enterText {
-  from {
-    left: -100%;
-  }
-  to {
-    left: 0%;
-  }
-}
-@keyframes enterBtn {
-  from {
-    left: -100%;
-  }
-  to {
-    left: 0%;
-  }
-}
-.list-proyects-container {
-  display: flex;
+  padding-block: 50px 30px;
+  padding-inline: 25%;
+  margin-top: 70px;
   gap: 15px;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-block: 15px 50px;
-  background: linear-gradient(180deg, #fafafa 0%, #8f8f8f 100%);
-}
-.list-proyects-container h2 {
-  font-size: 4rem;
-  min-width: 100vw;
-  color: #292929;
-  text-align: center;
-}
-.list-proyects-container hr {
-  min-width: 100vw;
-  height: 1px;
-  border-color: #4564c2;
-  background-color: #4564c2;
-}
-.list-proyects-container div {
-  display: grid;
   position: relative;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  border-radius: 20px;
-  height: 250px;
-  width: 370px;
-  color: #292929;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  box-shadow: 13px 10px 15px #a8a8a8;
-}
-.list-proyects-container div h3 {
-  grid-column: 1/3;
-  grid-row: 1/2;
-  font-size: 2.5rem;
-  color: #ffffff;
-  background-color: #292929;
-  border-radius: 20px 20px 0 0;
-  padding: 5px 10px;
-  align-self: flex-start;
-  width: 100%;
   text-align: center;
+  color: #ffffff;
 }
-.list-proyects-container div .proyects-btns {
+@media only screen and (max-width: 1279px) {
+  .about-me {
+    padding-inline: 10%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .about-me {
+    padding-inline: 5%;
+  }
+}
+.about-me .logoElement {
   display: flex;
-  position: absolute;
-  place-self: center;
-  width: 75%;
-  text-align: center;
-  overflow: hidden;
-  height: 35%;
-  border: 1px solid #ffffff;
-  background-color: rgba(37, 37, 37, 0.664);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  color: #ffffff;
-  font-size: 1.9rem;
-  text-decoration: none;
   justify-content: center;
   align-items: center;
-  font-weight: 400;
-  animation: look 0.8s steps(30);
+  position: absolute;
+  top: -55px;
+  left: calc(50% - 50px);
+  width: 100px;
+  height: 100px;
+  border: #ffffff 10px double;
+  background-color: #4564c2;
+  border-radius: 50%;
+  font-family: "Pacifico", cursive;
+  font-size: 3.5rem;
 }
-.list-proyects-container div .proyects-btns:hover {
-  background-color: #00008b;
+.about-me h3 {
+  font-size: 3rem;
 }
-.list-proyects-container div .proyects-btns-none {
-  display: none;
+.about-me--text {
+  font-size: 1.5rem;
+  line-height: 2;
 }
-@keyframes look {
-  from {
-    width: 0;
-    height: 0;
-  }
+.about-me--text .rounded-pill {
+  margin-right: 10px;
 }
-.list-proyects-container div #visit-btn {
-  grid-column: 1/2;
-  grid-row: 2/3;
+.about-me--text .bg-pill--html {
+  background-color: #f0652a;
 }
-.list-proyects-container div #repo-btn {
-  grid-column: 2/3;
-  grid-row: 2/3;
+.about-me--text .bg-pill--css {
+  background-color: #34aadc;
+}
+.about-me--text .bg-pill--sass {
+  background-color: #ca669c;
+}
+.about-me--text .bg-pill--javascript {
+  background-color: #e8d44c;
+}
+.about-me--text .bg-pill--react {
+  background-color: #61dbfb;
+}
+.about-me--text .bg-pill--typescript {
+  background-color: #2d79c7;
+}
+.about-me--text .bg-pill--bootstrap {
+  background-color: #7952b3;
+}
+.about-me--text .bg-pill--git {
+  background-color: #f05133;
+}
+.about-me a {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  margin-left: auto;
+}
+
+#container-proyects {
+  padding: 0px 0px 30px;
+  background-color: #eeeeee;
+}
+#container-proyects #proyects-title {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 700;
+  background-color: #4564c2;
+  border-top: #ffffff 10px double;
+  border-bottom: #ffffff 10px double;
+  padding: 10px;
+  text-align: center;
+}
+#container-proyects #list-proyects-container {
+  width: inherit;
+  margin: auto;
+}
+#container-proyects #list-proyects-container .proyect {
+  max-width: 500px;
+}
+#container-proyects #list-proyects-container .proyect .card {
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  overflow: hidden;
+}
+#container-proyects #list-proyects-container .proyect .card-body {
+  color: #292929;
+}
+#container-proyects #list-proyects-container .proyect .card-title {
+  font-size: 3rem;
+  text-align: center;
+}
+#container-proyects #list-proyects-container .proyect .card-footer {
+  display: flex;
+  justify-content: space-around;
+}
+#container-proyects #list-proyects-container .proyect .card-footer .btn {
+  font-size: 1.5rem;
 }
 
 footer {
@@ -265,16 +200,17 @@ footer .social-media {
 }
 footer .social-media .social-items {
   display: inline;
-  font-size: 3.9rem;
+  font-size: 3.5rem;
 }
 footer .social-media .mail-item {
   grid-area: 2/1/3/3;
   justify-self: center;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   gap: 5px;
 }
 footer .social-media .mail-item p {
   letter-spacing: 2px;
+  margin: 0%;
 }
 footer .social-media .social-linkedin {
   grid-area: 1/1/2/2;
@@ -288,7 +224,7 @@ footer .social-media li a,
 footer .social-media li p,
 footer .social-media li .bx {
   color: #ffffff;
-  font-family: "Oswald", sans-serif;
+  font-family: "Archivo", sans-serif;
   line-height: 1;
 }
 footer .social-media li a {
@@ -296,43 +232,12 @@ footer .social-media li a {
 }
 footer .footer-text {
   margin-top: 15px;
+  margin-bottom: 0%;
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: 400;
-  color: #a8a8a8;
+  color: #a1a1a1;
 }
 footer .footer-text > a {
   color: #77b5fe;
-}
-
-@media only screen and (max-width: 425px) {
-  .header-container {
-    align-items: center;
-    background-image: url("../assets/michael-baccin-XopauR-Nagk-unsplash.webp");
-  }
-  .header-container .header-list {
-    justify-content: center;
-    padding: 0;
-  }
-  .header-container h1,
-.header-container p {
-    max-width: none;
-    text-align: center;
-  }
-
-  .about-me--text {
-    border: #ffffff 1px solid;
-    padding: 15px;
-    border-radius: 10px;
-    max-width: none;
-  }
-
-  footer .social-media {
-    align-items: flex-start;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .about-me--text {
-    max-width: none;
-  }
 }
