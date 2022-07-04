@@ -1,45 +1,44 @@
 {
-    
     "Movies": {
         "name": "Api Movies",
         "url": "https://lautarold.github.io/r-p-s/",
         "repository": "https://github.com/LautaroLD/r-p-s",
-        "img": "/assets/movies.webp"
+        "img": "/assets/movies.jpg"
     },
     "Api-countries": {
         "name": "Api countries",
         "url": "https://lautarold.github.io/rest-countries-api/",
         "repository": "https://github.com/LautaroLD/rest-countries-api",
-        "img": "/assets/rest-countries-api.webp"
+        "img": "/assets/rest-countries-api.jpg"
     },
     "Rock-Paper-Scissors": {
         "name": "Rock Paper Scissors",
         "url": "https://lautarold.github.io/r-p-s/",
         "repository": "https://github.com/LautaroLD/r-p-s",
-        "img": "/assets/r-p-s.webp"
+        "img": "/assets/r-p-s.jpg"
     },
     "Task-manager": {
         "name": "Task manager",
         "url": "https://lautarold.github.io/task-manager/",
         "repository": "https://github.com/LautaroLD/task-manager",
-        "img": "/assets/task-manager.webp"
+        "img": "/assets/task-manager.jpg"
     },
     "login-register": {
         "name": "Login/Register Chessking",
         "url": "https://lautarold.github.io/log-reg/",
         "repository": "https://github.com/LautaroLD/log-reg",
-        "img": "/assets/log-reg.webp"
+        "img": "/assets/log-reg.jpg"
     },
     "e-commerce-product": {
         "name": "E-commerce product page",
         "url": "https://lautarold.github.io/e-commerce/",
         "repository": "https://github.com/LautaroLD/e-commerce",
-        "img": "/assets/e-commerce-product.webp"
+        "img": "/assets/e-commerce-product.jpg"
     },
     "Manage-landing-page": {
         "name": "Manage landing page",
         "url": "https://lautarold.github.io/manage-landing/",
         "repository": "https://github.com/LautaroLD/manage-landing/",
-        "img": "/assets/manage-landing.webp"
+        "img": "/assets/manage-landing.jpg"
     }
 }
