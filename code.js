@@ -8,7 +8,7 @@ function pushElement(classElem, name, sitio, repo, imageBg) {
     })
     let img = Object.assign(document.createElement('IMG'), {
         className: 'card-img-top',
-        src:imageBg,
+        src: imageBg,
         alt: classElem
     })
     let cardBody = Object.assign(document.createElement('DIV'), {
