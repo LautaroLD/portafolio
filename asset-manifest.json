@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/portafolio/static/css/main.c871fbd3.css",
+    "main.js": "/portafolio/static/js/main.a047becc.js",
+    "static/media/logo.png": "/portafolio/static/media/logo.419a64b2687cf3c0b9be.png",
+    "static/media/desarrollador-frontend.pdf": "/portafolio/static/media/desarrollador-frontend.88c35c246f5622341fcc.pdf",
+    "static/media/bxl-github.svg": "/portafolio/static/media/bxl-github.d18d7702c32e58f253d71e64e5499a0f.svg",
+    "index.html": "/portafolio/index.html",
+    "static/media/bxl-linkedin-square.svg": "/portafolio/static/media/bxl-linkedin-square.7fcd90cc74a54327c4db95ee346bee66.svg",
+    "main.c871fbd3.css.map": "/portafolio/static/css/main.c871fbd3.css.map",
+    "main.a047becc.js.map": "/portafolio/static/js/main.a047becc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c871fbd3.css",
+    "static/js/main.a047becc.js"
+  ]
+}
