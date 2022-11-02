@@ -1,0 +1,159 @@
+.main-section__about-me {
+    background     : $color-bg-gradient;
+    display        : flex;
+    flex-direction : column;
+    gap            : 10px;
+    justify-content: center;
+    min-height     : 100vh;
+    padding        : 0 5vw 0px;
+    padding-top    : 10px;
+    position       : relative;
+    text-align     : center;
+
+    @include respond-to-tablet() {
+        padding-top: 0;
+    }
+
+    .about-me__logo-top {
+        width : 60px;
+        margin: auto auto 0;
+    }
+
+    .about-me__title {
+        font-size: $font-s-title;
+
+        @include respond-to-tablet() {
+            font-size  : 4rem;
+            line-height: .5;
+        }
+
+    }
+
+    .about-me__content {
+        font-size  : 1.8rem;
+        line-height: 1.5;
+        margin     : 0 auto;
+        max-width  : 1024px;
+    }
+
+    .social-content {
+        display        : flex;
+        justify-content: center;
+        gap            : 15px;
+    }
+
+    .social-imgs {
+        transition: all .5s;
+        width     : 60px;
+        height    : 60px;
+
+        .social__icon {
+            width : inherit;
+            height: inherit;
+        }
+
+        &:hover {
+            filter: invert(1);
+        }
+
+    }
+
+
+    .btn-cv {
+        border         : 1px solid $color-light;
+        color          : $color-light;
+        font-size      : 1.8rem;
+        font-weight    : $font-w-b;
+        margin         : auto 0 0 auto;
+        padding        : 10px 30px;
+        text-decoration: none;
+        transition     : all .5s;
+        width          : fit-content;
+
+        &:hover {
+            background-color: $color-light;
+            color           : $color-dark;
+        }
+
+    }
+
+    .pills-tecnologies {
+        display        : flex;
+        flex-wrap      : wrap;
+        gap            : 10px;
+        justify-content: center;
+        margin         : auto auto 75px;
+
+        h3 {
+            font-size: 2rem;
+            width    : 100%;
+        }
+
+        .pill {
+            border-radius: 10px;
+            color        : $color-dark;
+            font-size    : 1.4rem;
+            font-weight  : $font-w-b;
+            padding      : 3px 10px;
+
+            &-html {
+                background-color: $color-pill-html;
+            }
+
+            &-css {
+                background-color: $color-pill-css;
+            }
+
+            &-sass {
+                background-color: $color-pill-sass;
+            }
+
+            &-js {
+                background-color: $color-pill-js;
+            }
+
+            &-react {
+                background-color: $color-pill-react;
+            }
+
+            &-git {
+                background-color: $color-pill-git;
+            }
+
+            &-bootstrap {
+                background-color: $color-pill-bt;
+            }
+        }
+    }
+
+    .about-me__logo-bottom {
+        animation: 4s rotate linear infinite;
+        bottom   : -60px;
+        height   : 120px;
+        left     : 0;
+        margin   : 0 auto;
+        position : absolute;
+        right    : 0;
+        width    : 120px;
+    }
+
+    @keyframes rotate {
+
+        0%,
+        100% {
+            scale: .8;
+        }
+
+        50% {
+            scale: 1;
+        }
+
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "movies": {
+        "name": "Movies page",
+        "url": "https://lautarold.github.io/movies/",
+        "repository": "https://github.com/LautaroLD/movies",
+        "info": "Sitio donde podemos ver películas con detalles de cada una, navegar entre sí, buscar por nombre, filtrar por géneros y agregar a listas de favoritos. Cuenta con infinite scroll y loading skeletons. Utilizo API REST con JAVASCRIPT y SASS para los estilos.",
+        "img": "https://chi01pap002files.storage.live.com/y4mkP56PuPNKYYQkYGpkRu_54topEDoXkmNsztzh88U-5bdDB7AUDzbO4D0g3J0euRbJgzh2-3Mq5MyzbqhAiLlUH2i9MwRzxmftRPPtigZXgE-uGTy8axxav-hO6h2GqQpSBXvaXryUseIO8nnSvuBtp3UiHWB-Nc8B0l5urmMnhwaw7xQKn2aELheMLBDv8-9?width=660&height=392&cropmode=none"
+    },
+    "api-countries": {
+        "name": "Countries page",
+        "url": "https://lautarold.github.io/rest-countries-api/",
+        "repository": "https://github.com/LautaroLD/rest-countries-api",
+        "info": "Sitio con detalles de países, podemos abrir un modal con más información y navegar entre los países fronterizos. También es posible filtrar por región, buscar por nombre y alternar entre modo claro y obscuro. Creado en React.js utilizando Hooks y localStorage. Para el estilo empleo SASS.",
+        "img": "https://chi01pap002files.storage.live.com/y4m-s5lw5bKTwm6jwu9GA19XWQ8iblVyE5Ygvx8ab6YwZz2L1t7Dgus5tssqpQKRlxkU37_H45BhN8P6obvfue33Qkg_tH2FL41Cdj1qI6UkINuexXjamkaTVYxVDUF2Wf5E_pPcbUfjNipxetT1TCkgIA6-zGZ72dKVYmAMhjacinufdqg7A_6aZECGzhr2V4l?width=660&height=389&cropmode=none"
+    },
+    "rock-paper-scissors": {
+        "name": "Rock Paper Scissors",
+        "url": "https://lautarold.github.io/r-p-s/",
+        "repository": "https://github.com/LautaroLD/r-p-s",
+        "info": "Juego clásico de piedra, papel o tijera, creado en React.js con Bootstrap y SASS. Contiene un contador para los puntos. También un modal con las reglas del juego. Tiene responsive design.",
+        "img": "https://chi01pap002files.storage.live.com/y4mk0edTmRq359f9GL94yGKlKO6wjOS1SVNf97SBX_luJZj2752RD36T8D-S6unBDqTsKUz2G5-IpvrVD9oo_iO0JchWHBWXwTlaMu1CvbAc2Yh4uvX1PZKiPtnRRtSnCuMxqgkxAnOucok9aM1uM6v-AyodN2EX01lG22gthhz7_kCmsevYI9n_xBqRwtqoKVz?width=660&height=392&cropmode=none"
+    },
+    "task-manager": {
+        "name": "Task manager",
+        "url": "https://lautarold.github.io/task-manager/",
+        "repository": "https://github.com/LautaroLD/task-manager",
+        "info": "Sitio para crear una lista de tareas, podemos agregar, eliminar y marcar como completado cada ítem. Desarrollado en React,js utilizando Hooks y localStorage para permitir la persistencia de las tareas y sus estados. Para el estilo empleo SASS y cuenta con responsive design.",
+        "img": "https://chi01pap002files.storage.live.com/y4muA_TsfgyCD4EtzPlVFwmIDiB5Ft5n8z_ha3XBMSa6rWNxEL7cirhrP5_JVmuWtpRa3u0DIPoGK0QU-25M71jB1eMtloe36WAc4W_anA3NIDWRT6-w6EcpVfHSSYh7ho3aaE0Q4WCrZwYGwA-OlEOQRXed2t3mhXMzOYi89KwgDhdzr-lNRz-lISjAiF0WoPh?width=660&height=394&cropmode=none"
+    }
+}

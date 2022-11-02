@@ -1,0 +1,114 @@
+.proyects-section {
+    height : 100vh;
+    padding: 70px 0px;
+
+    &__title {
+        color          : $color-dark;
+        display        : flex;
+        font-size      : $font-s-title;
+        gap            : 5px;
+        justify-content: center;
+        text-align     : center;
+
+        hr {
+            background-color: $color-dark;
+            border          : none;
+            height          : 2px;
+            margin          : auto;
+            width           : 100%;
+        }
+    }
+
+    .proyects-container {
+        display        : flex;
+        flex-wrap      : wrap;
+        justify-content: center;
+        width          : inherit;
+
+        .proyect {
+            border-radius : 10px;
+            color         : $color-dark;
+            display       : flex;
+            flex-direction: column;
+            margin        : 5px;
+            max-width     : 380px;
+            padding       : 15px;
+
+            &:nth-child(odd) {
+                background-color: $color-gray-light;
+            }
+
+            &:nth-child(even) {
+                background-color: $color-gray;
+                color           : $color-light;
+
+                .proyect-content {
+                    .btns {
+                        a {
+                            color: $color-light;
+
+                        }
+                    }
+                }
+            }
+
+            .proyect-content {
+                display       : flex;
+                flex-direction: column;
+                gap           : 10px;
+
+                h3 {
+                    font-size      : 3rem;
+                    text-decoration: underline;
+                }
+
+                p {
+                    font-size     : 1.5rem;
+                }
+
+                img {
+                    width        : 100%;
+                    border-radius: 10px;
+                }
+
+                .btns {
+                    display        : flex;
+                    justify-content: space-around;
+                    align-items    : center;
+
+                    .btn-visit {
+                        border-radius   : 10px;
+                        background-color: $color-btn-bg;
+
+                        &:hover {
+                            background-color: $color-btn-bg-hover;
+                            color           : $color-light;
+
+                        }
+                    }
+
+                    .btn-repo {
+                        &:hover {
+                            color: $color-btn-bg-hover;
+                        }
+                    }
+
+                    a {
+                        border-radius  : 10px;
+                        color          : $color-dark;
+                        font-size      : 1.5rem;
+                        font-weight    : $font-w-b;
+                        padding        : 10px 15px;
+                        text-decoration: none;
+
+                        &:hover {
+                            transform : scale(1.2);
+                            transition: all .3s;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
