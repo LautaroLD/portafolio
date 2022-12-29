@@ -24,7 +24,6 @@ html .main {
   justify-content: center;
   min-height: 100vh;
   padding: 0 5vw 0px;
-  padding-top: 10px;
   position: relative;
   text-align: center;
 }
@@ -36,6 +35,8 @@ html .main {
 .main-section__about-me .about-me__logo-top {
   width: 60px;
   margin: auto auto 0;
+  border-radius: 50%;
+  background-color: #ffffff;
 }
 .main-section__about-me .about-me__title {
   font-size: 3rem;
@@ -133,6 +134,8 @@ html .main {
   position: absolute;
   right: 0;
   width: 120px;
+  border-radius: 50%;
+  background-color: #ffffff;
 }
 @keyframes rotate {
   0%, 100% {
@@ -150,7 +153,6 @@ html .main {
 }
 
 .proyects-section {
-  height: 100vh;
   padding: 70px 0px;
 }
 .proyects-section__title {
@@ -236,4 +238,44 @@ html .main {
 .proyects-section .proyects-container .proyect .proyect-content .btns a:hover {
   transform: scale(1.2);
   transition: all 0.3s;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  padding-block: 10px;
+  width: 100%;
+}
+.footer .form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  max-width: 600px;
+}
+.footer .form .input {
+  background-color: #eeeeee;
+}
+.footer .form .input:focus-visible {
+  outline: none;
+}
+.footer .form .input,
+.footer .form button {
+  border-radius: 20px;
+  margin-block: 5px;
+  border: none;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+.footer .form button {
+  background-color: #5d9feb;
+  padding: 10px 30px;
+  margin-inline: auto;
+}
+.footer .form button:hover {
+  background-color: #1111ad;
+}
+.footer .form textarea {
+  resize: none;
 }

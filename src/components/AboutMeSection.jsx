@@ -7,10 +7,10 @@ function AboutMeSection() {
     return (
         <section className='main-section__about-me'>
             <LogoComponent site='top' />
-            <p className="about-me__content">Hola soy</p>
-            <h2 className='about-me__title'>Lautaro Duran!!</h2>
+            {/* <p className="about-me__content">Hola soy</p> */}
+            <h2 className='about-me__content'>Lautaro Duran!!</h2>
             <p className="about-me__content">
-                <b>
+                <b className="about-me__title">
                     Desarrollador web frontend
                 </b>
                 <br />
