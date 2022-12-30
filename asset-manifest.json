@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portafolio/static/css/main.ed253c56.css",
-    "main.js": "/portafolio/static/js/main.b9899be7.js",
+    "main.css": "/portafolio/static/css/main.47c3a405.css",
+    "main.js": "/portafolio/static/js/main.3ca214da.js",
     "static/media/logo.png": "/portafolio/static/media/logo.96a5d1a6831e92a2027f.png",
     "static/media/desarrollador-frontend.pdf": "/portafolio/static/media/desarrollador-frontend.88c35c246f5622341fcc.pdf",
     "static/media/bxl-github.svg": "/portafolio/static/media/bxl-github.d18d7702c32e58f253d71e64e5499a0f.svg",
     "index.html": "/portafolio/index.html",
     "static/media/bxl-linkedin-square.svg": "/portafolio/static/media/bxl-linkedin-square.7fcd90cc74a54327c4db95ee346bee66.svg",
-    "main.ed253c56.css.map": "/portafolio/static/css/main.ed253c56.css.map",
-    "main.b9899be7.js.map": "/portafolio/static/js/main.b9899be7.js.map"
+    "main.47c3a405.css.map": "/portafolio/static/css/main.47c3a405.css.map",
+    "main.3ca214da.js.map": "/portafolio/static/js/main.3ca214da.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed253c56.css",
-    "static/js/main.b9899be7.js"
+    "static/css/main.47c3a405.css",
+    "static/js/main.3ca214da.js"
   ]
 }
