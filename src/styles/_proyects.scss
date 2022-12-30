@@ -1,6 +1,6 @@
 .proyects-section {
     padding: 70px 0px;
-
+background-color: $color-gray-light;
     &__title {
         color          : $color-dark;
         display        : flex;
@@ -34,7 +34,7 @@
             padding       : 15px;
 
             &:nth-child(odd) {
-                background-color: $color-gray-light;
+                background-color: $color-light;
             }
 
             &:nth-child(even) {

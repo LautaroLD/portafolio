@@ -154,6 +154,7 @@ html .main {
 
 .proyects-section {
   padding: 70px 0px;
+  background-color: #eeeeee;
 }
 .proyects-section__title {
   color: #000000;
@@ -186,7 +187,7 @@ html .main {
   padding: 15px;
 }
 .proyects-section .proyects-container .proyect:nth-child(odd) {
-  background-color: #eeeeee;
+  background-color: #ffffff;
 }
 .proyects-section .proyects-container .proyect:nth-child(even) {
   background-color: #585858;
@@ -242,11 +243,17 @@ html .main {
 
 .footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #000000;
   padding-block: 10px;
   width: 100%;
+}
+.footer-title {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 400;
 }
 .footer .form {
   display: flex;
@@ -255,26 +262,38 @@ html .main {
   max-width: 600px;
 }
 .footer .form .input {
-  background-color: #eeeeee;
+  background-color: transparent;
+  border: none;
+  border-bottom: #ffffff 1px solid;
+  color: #ffffff;
+}
+.footer .form .input::placeholder {
+  color: #eeeeee;
 }
 .footer .form .input:focus-visible {
   outline: none;
+  background-color: #585858;
 }
 .footer .form .input,
 .footer .form button {
-  border-radius: 20px;
   margin-block: 5px;
-  border: none;
+  font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   padding: 10px;
 }
 .footer .form button {
+  border-radius: 20px;
+  border: none;
   background-color: #5d9feb;
   padding: 10px 30px;
   margin-inline: auto;
+  font-weight: 700;
 }
 .footer .form button:hover {
   background-color: #1111ad;
+  color: #ffffff;
+  transform: scale(1.2);
+  transition: all 0.3s;
 }
 .footer .form textarea {
   resize: none;

@@ -1,9 +1,9 @@
 import React from 'react';
 import AboutMeSection from './components/AboutMeSection';
+import Form from './components/Form';
 import ProyectsSection from './components/ProyectsSection';
 
 function App() {
-
 	return (
 		<React.Fragment>
 			<main className='main'>
@@ -11,12 +11,8 @@ function App() {
 				<ProyectsSection />
 			</main>
 			<footer className='footer'>
-				<form className='form' action="https://formsubmit.co/duranlautarogabriel@gmail.com" method="POST">
-					<input className='input' placeholder='Nombre' type="text" name="name" required />
-					<input className='input' placeholder='Email' type="email" name="email" required />
-					<textarea className='input' placeholder='Mensaje' name="content" cols="30" rows="8" required />
-					<button type="submit">Enviar</button>
-				</form>
+				<h2 className='footer-title'>Pongámonos en contacto</h2>
+				<Form />
 			</footer>
 		</React.Fragment >
 	);

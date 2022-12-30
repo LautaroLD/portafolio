@@ -8,7 +8,7 @@ function AboutMeSection() {
         <section className='main-section__about-me'>
             <LogoComponent site='top' />
             {/* <p className="about-me__content">Hola soy</p> */}
-            <h2 className='about-me__content'>Lautaro Duran!!</h2>
+            <p className='about-me__content'>Lautaro Duran</p>
             <p className="about-me__content">
                 <b className="about-me__title">
                     Desarrollador web frontend
