@@ -17,8 +17,8 @@ function ProyectItem() {
                         <h3 >{item[1].name} </h3>
                         <p>{item[1].info}</p>
                         <div className='btns'>
-                            <a href={item[1].url} className='btn-visit' >Visitar</a>
-                            <a href={item[1].repository} className='btn-repo'>Repositorio</a>
+                            <a href={item[1].url} className='btn btn-visit' >Visitar</a>
+                            <a href={item[1].repository} className='btn btn-repo'>Repositorio</a>
                         </div>
                     </div>
                 </div>

@@ -24,7 +24,7 @@
         "name": "Task manager",
         "url": "https://lautarold.github.io/task-manager/",
         "repository": "https://github.com/LautaroLD/task-manager",
-        "info": "Sitio para crear una lista de tareas, podemos agregar, eliminar y marcar como completado cada ítem. Desarrollado en React,js utilizando Hooks y localStorage para permitir la persistencia de las tareas y sus estados. Para el estilo empleo SASS y cuenta con responsive design.",
+        "info": "Sitio para crear una lista de tareas, podemos agregar, eliminar y marcar como completado cada ítem. Desarrollado en React.js utilizando Hooks y localStorage para permitir la persistencia de las tareas y sus estados. Para el estilo empleo SASS y cuenta con responsive design.",
         "img": "https://chi01pap002files.storage.live.com/y4muA_TsfgyCD4EtzPlVFwmIDiB5Ft5n8z_ha3XBMSa6rWNxEL7cirhrP5_JVmuWtpRa3u0DIPoGK0QU-25M71jB1eMtloe36WAc4W_anA3NIDWRT6-w6EcpVfHSSYh7ho3aaE0Q4WCrZwYGwA-OlEOQRXed2t3mhXMzOYi89KwgDhdzr-lNRz-lISjAiF0WoPh?width=660&height=394&cropmode=none"
     }
 }

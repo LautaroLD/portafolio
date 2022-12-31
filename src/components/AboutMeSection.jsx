@@ -14,14 +14,12 @@ function AboutMeSection() {
                     Desarrollador web frontend
                 </b>
                 <br />
-                Cuento con una fuerte cultura del trabajo y dedicación
-                sumado a no parar de aprender, para así, lograr gran calidad en mis proyectos.
+                Con una fuerte cultura del trabajo, dedicación, creando soluciones y sin parar de aprender busco gran calidad en mis resultados.
                 <br />
-                Me
-                gusta crear soluciones y colaborar para lograr los mejores resultados.
+                Con disciplina, autonomía y aplicando razonamiento lógico utilizo mis habilidades en las distintas tecnologías para agregar valor a cada proyecto.
             </p>
             <SocialContent />
-            <a className='btn-cv' href={Cv}>Ver cv</a>
+            <a className='btn-cv' href={Cv} target='_blank'>Ver cv</a>
             <PillTecnologies />
             <LogoComponent site='bottom' />
         </section>

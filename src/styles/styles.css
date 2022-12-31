@@ -3,17 +3,50 @@
 * {
   margin: 0%;
   padding: 0%;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%;
   font-family: "Poppins", sans-serif;
+  min-width: 320px;
 }
 html .main {
   display: flex;
   flex-direction: column;
   color: #ffffff;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn-visit {
+  border-radius: 10px;
+  background-color: #5d9feb;
+}
+.btn-visit:hover {
+  background-color: #1111ad;
+  color: #ffffff;
+}
+
+.btn-repo:hover {
+  color: #1111ad;
+}
+
+.btn {
+  border-radius: 10px;
+  color: #000000;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+.btn:hover {
+  transform: scale(1.2);
+  transition: all 0.3s;
 }
 
 .main-section__about-me {
@@ -23,7 +56,7 @@ html .main {
   gap: 10px;
   justify-content: center;
   min-height: 100vh;
-  padding: 0 5vw 0px;
+  padding: 10px 5vw 0px;
   position: relative;
   text-align: center;
 }
@@ -183,7 +216,8 @@ html .main {
   display: flex;
   flex-direction: column;
   margin: 5px;
-  max-width: 380px;
+  min-width: 320px;
+  width: 380px;
   padding: 15px;
 }
 .proyects-section .proyects-container .proyect:nth-child(odd) {
@@ -211,34 +245,6 @@ html .main {
 .proyects-section .proyects-container .proyect .proyect-content img {
   width: 100%;
   border-radius: 10px;
-}
-.proyects-section .proyects-container .proyect .proyect-content .btns {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.proyects-section .proyects-container .proyect .proyect-content .btns .btn-visit {
-  border-radius: 10px;
-  background-color: #5d9feb;
-}
-.proyects-section .proyects-container .proyect .proyect-content .btns .btn-visit:hover {
-  background-color: #1111ad;
-  color: #ffffff;
-}
-.proyects-section .proyects-container .proyect .proyect-content .btns .btn-repo:hover {
-  color: #1111ad;
-}
-.proyects-section .proyects-container .proyect .proyect-content .btns a {
-  border-radius: 10px;
-  color: #000000;
-  font-size: 1.5rem;
-  font-weight: 700;
-  padding: 10px 15px;
-  text-decoration: none;
-}
-.proyects-section .proyects-container .proyect .proyect-content .btns a:hover {
-  transform: scale(1.2);
-  transition: all 0.3s;
 }
 
 .footer {

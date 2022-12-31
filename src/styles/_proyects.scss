@@ -1,6 +1,7 @@
 .proyects-section {
-    padding: 70px 0px;
-background-color: $color-gray-light;
+    padding         : 70px 0px;
+    background-color: $color-gray-light;
+
     &__title {
         color          : $color-dark;
         display        : flex;
@@ -30,7 +31,8 @@ background-color: $color-gray-light;
             display       : flex;
             flex-direction: column;
             margin        : 5px;
-            max-width     : 380px;
+            min-width     : 320px;
+            width         : 380px;
             padding       : 15px;
 
             &:nth-child(odd) {
@@ -62,50 +64,12 @@ background-color: $color-gray-light;
                 }
 
                 p {
-                    font-size     : 1.5rem;
+                    font-size: 1.5rem;
                 }
 
                 img {
                     width        : 100%;
                     border-radius: 10px;
-                }
-
-                .btns {
-                    display        : flex;
-                    justify-content: space-around;
-                    align-items    : center;
-
-                    .btn-visit {
-                        border-radius   : 10px;
-                        background-color: $color-btn-bg;
-
-                        &:hover {
-                            background-color: $color-btn-bg-hover;
-                            color           : $color-light;
-
-                        }
-                    }
-
-                    .btn-repo {
-                        &:hover {
-                            color: $color-btn-bg-hover;
-                        }
-                    }
-
-                    a {
-                        border-radius  : 10px;
-                        color          : $color-dark;
-                        font-size      : 1.5rem;
-                        font-weight    : $font-w-b;
-                        padding        : 10px 15px;
-                        text-decoration: none;
-
-                        &:hover {
-                            transform : scale(1.2);
-                            transition: all .3s;
-                        }
-
-                    }
                 }
             }
         }
