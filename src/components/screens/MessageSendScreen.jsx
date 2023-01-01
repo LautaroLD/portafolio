@@ -3,8 +3,11 @@ import React from 'react'
 function MessageSendScreen() {
   return (
     <>
-      <h3>Gracias por su mensaje, pronto recibirá una respuesta.</h3>
-      <a className='btn btn-repo' href={`${document.location.origin}${document.location.pathname}`}>volver</a>
+      <div className='send__container'>
+        <h3 className='send__title'>¡¡Gracias por su mensaje!!</h3>
+        <p className='send__text'>pronto recibirá una respuesta.</p>
+        <a className='btn btn-secondary' href={`${document.location.origin}${document.location.pathname}`}>volver</a>
+      </div>
     </>
   )
 }

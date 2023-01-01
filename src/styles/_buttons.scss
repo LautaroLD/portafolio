@@ -4,7 +4,7 @@
     align-items    : center;
 }
 
-.btn-visit {
+.btn-primary {
     border-radius   : 10px;
     background-color: $color-btn-bg;
 
@@ -15,7 +15,7 @@
     }
 }
 
-.btn-repo {
+.btn-secondary {
     &:hover {
         color: $color-btn-bg-hover;
     }

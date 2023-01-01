@@ -11,6 +11,14 @@ html {
   font-family: "Poppins", sans-serif;
   min-width: 320px;
 }
+html body {
+  min-height: 100vh;
+}
+html #root {
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+}
 html .main {
   display: flex;
   flex-direction: column;
@@ -23,16 +31,16 @@ html .main {
   align-items: center;
 }
 
-.btn-visit {
+.btn-primary {
   border-radius: 10px;
   background-color: #5d9feb;
 }
-.btn-visit:hover {
+.btn-primary:hover {
   background-color: #1111ad;
   color: #ffffff;
 }
 
-.btn-repo:hover {
+.btn-secondary:hover {
   color: #1111ad;
 }
 
@@ -131,7 +139,7 @@ html .main {
   width: 100%;
 }
 .main-section__about-me .pills-tecnologies .pill {
-  border-radius: 10px;
+  border-radius: 15px;
   color: #000000;
   font-size: 1.4rem;
   font-weight: 700;
@@ -260,11 +268,12 @@ html .main {
   color: #ffffff;
   font-size: 3rem;
   font-weight: 400;
+  text-align: center;
 }
 .footer .form {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 80%;
   max-width: 600px;
 }
 .footer .form .input {
@@ -303,4 +312,24 @@ html .main {
 }
 .footer .form textarea {
   resize: none;
+}
+
+.send__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 400px;
+  height: 500px;
+  padding: 15px;
+  text-align: center;
+  margin: auto;
+  background-color: #eeeeee;
+  border-radius: 15px;
+}
+.send__title {
+  font-size: 3rem;
+}
+.send__text {
+  font-size: 1.5rem;
 }
