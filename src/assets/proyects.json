@@ -1,10 +1,10 @@
 {
-    "movies": {
-        "name": "Movies page",
-        "url": "https://lautarold.github.io/movies/",
-        "repository": "https://github.com/LautaroLD/movies",
-        "info": "Sitio donde podemos ver películas con detalles de cada una, navegar entre sí, buscar por nombre, filtrar por géneros y agregar a listas de favoritos. Cuenta con infinite scroll y loading skeletons. Utilizo API REST con JAVASCRIPT y SASS para los estilos.",
-        "img": "https://chi01pap002files.storage.live.com/y4mkP56PuPNKYYQkYGpkRu_54topEDoXkmNsztzh88U-5bdDB7AUDzbO4D0g3J0euRbJgzh2-3Mq5MyzbqhAiLlUH2i9MwRzxmftRPPtigZXgE-uGTy8axxav-hO6h2GqQpSBXvaXryUseIO8nnSvuBtp3UiHWB-Nc8B0l5urmMnhwaw7xQKn2aELheMLBDv8-9?width=660&height=392&cropmode=none"
+    "moviesGo": {
+        "name": "MoviesGo",
+        "url": "https://moviesgo.netlify.app/",
+        "repository": "https://github.com/LautaroLD/moviesgo",
+        "info": "Sitio donde podemos ver películas con detalles de cada una, navegar entre sí, buscar por nombre, filtrar por géneros y agregar a listas de favoritos. Creado con React.js, utiliza Redux, Axios y SASS para los estilos",
+        "img": "https://phx02pap002files.storage.live.com/y4m9IpFmfHfKM7l69rbhnFKtxWwRS-pjqJ4T_ny9Ur5ZY5BzCkdlty3oU9Dx6uiz-AWRvdwI5Gl1zjv3v0e8sulYd5cy-xL21i0QbtpMn6GXtQCPMPlZmESV76Uxc6ecrbBImstAyAPl4OBhp0Cb2gxBiFWE253nOEVQbOF85J0Kx8UDs-UBkz2VgiKSBD8OqwQ?width=660&height=397&cropmode=none"
     },
     "api-countries": {
         "name": "Countries page",
@@ -17,7 +17,7 @@
         "name": "Rock Paper Scissors",
         "url": "https://lautarold.github.io/r-p-s/",
         "repository": "https://github.com/LautaroLD/r-p-s",
-        "info": "Juego clásico de piedra, papel o tijera, creado en React.js con Bootstrap y SASS. Contiene un contador para los puntos. También un modal con las reglas del juego. Tiene responsive design.",
+        "info": "Juego clásico de piedra, papel o tijera, creado en React.js con Bootstrap y SASS. Contiene un contador para los puntos. También un modal con las reglas del juego y es responsive design.",
         "img": "https://chi01pap002files.storage.live.com/y4mk0edTmRq359f9GL94yGKlKO6wjOS1SVNf97SBX_luJZj2752RD36T8D-S6unBDqTsKUz2G5-IpvrVD9oo_iO0JchWHBWXwTlaMu1CvbAc2Yh4uvX1PZKiPtnRRtSnCuMxqgkxAnOucok9aM1uM6v-AyodN2EX01lG22gthhz7_kCmsevYI9n_xBqRwtqoKVz?width=660&height=392&cropmode=none"
     },
     "task-manager": {
