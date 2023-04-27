@@ -1,23 +1,23 @@
 .main-section__about-me {
-    background     : $color-bg-gradient;
-    display        : flex;
-    flex-direction : column;
-    gap            : 10px;
-    justify-content: center;
-    min-height     : 100vh;
-    padding        : 10px 5vw 0px;
+    background        : $color-bg-gradient;
+    display           : flex;
+    flex-direction    : column;
+    gap               : 10px;
+    justify-content   : center;
+    min-height        : 100vh;
+    padding           : 10px 5vw 0px;
     // padding-top    : 10px;
-    position       : relative;
-    text-align     : center;
+    position          : relative;
+    text-align        : center;
 
     @include respond-to-tablet() {
         padding-top: 0;
     }
 
     .about-me__logo-top {
-        width : 60px;
-        margin: auto auto 0;
-        border-radius: 50%;
+        width           : 60px;
+        margin          : auto auto 0;
+        border-radius   : 50%;
         background-color: $color-light;
     }
 
@@ -46,12 +46,13 @@
 
     .social-imgs {
         transition: all .5s;
-        width     : 60px;
-        height    : 60px;
+        width     : 50px;
+        height    : 50px;
 
         .social__icon {
             width : inherit;
             height: inherit;
+            color : $color-light;
         }
 
         &:hover {
@@ -125,39 +126,6 @@
             &-bootstrap {
                 background-color: $color-pill-bt;
             }
-        }
-    }
-
-    .about-me__logo-bottom {
-        animation: 4s rotate linear infinite;
-        bottom   : -60px;
-        height   : 120px;
-        left     : 0;
-        margin   : 0 auto;
-        position : absolute;
-        right    : 0;
-        width    : 120px;
-        border-radius: 50%;
-        background-color: $color-light;
-    }
-
-    @keyframes rotate {
-
-        0%,
-        100% {
-            scale: .8;
-        }
-
-        50% {
-            scale: 1;
-        }
-
-        from {
-            transform: rotate(0deg);
-        }
-
-        to {
-            transform: rotate(360deg);
         }
     }
 }

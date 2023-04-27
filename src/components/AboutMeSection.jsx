@@ -21,7 +21,7 @@ function AboutMeSection() {
             <SocialContent />
             <a className='btn-cv' href={Cv} target='_blank'>Ver cv</a>
             <PillTecnologies />
-            <LogoComponent site='bottom' />
+            {/* <LogoComponent site='bottom' /> */}
         </section>
     )
 }
