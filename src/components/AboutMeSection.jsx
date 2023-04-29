@@ -1,5 +1,4 @@
 import React from 'react'
-import Cv from '../assets/desarrollador-frontend.pdf'
 import PillTecnologies from './PillTecnologies';
 import LogoComponent from './LogoComponent';
 import SocialContent from './SocialContent';
@@ -19,7 +18,7 @@ function AboutMeSection() {
                 Con disciplina, autonomía y aplicando razonamiento lógico utilizo mis habilidades en las distintas tecnologías para agregar valor a cada proyecto.
             </p>
             <SocialContent />
-            <a className='btn-cv' href={Cv} target='_blank'>Ver cv</a>
+            <a className='btn-cv' href="https://drive.google.com/file/d/1pZ0UjisrhoWm_nbWVIbczqlQdN11RiSj/view?usp=share_link" target='_blank'>Ver cv</a>
             <PillTecnologies />
             {/* <LogoComponent site='bottom' /> */}
         </section>
