@@ -6,7 +6,6 @@ function AboutMeSection() {
     return (
         <section className='main-section__about-me'>
             <LogoComponent site='top' />
-            {/* <p className="about-me__content">Hola soy</p> */}
             <p className='about-me__content'>Lautaro Duran</p>
             <p className="about-me__content">
                 <b className="about-me__title">
@@ -20,7 +19,6 @@ function AboutMeSection() {
             <SocialContent />
             <a className='btn-cv' href="https://drive.google.com/file/d/1pZ0UjisrhoWm_nbWVIbczqlQdN11RiSj/view?usp=share_link" target='_blank'>Ver cv</a>
             <PillTecnologies />
-            {/* <LogoComponent site='bottom' /> */}
         </section>
     )
 }

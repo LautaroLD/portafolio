@@ -1,8 +1,5 @@
 import React from 'react'
 import { BsGithub, BsLinkedin } from "react-icons/bs"
-// import { ReactComponent as IconGithub } from '../assets/bxl-github.svg'
-// import IconGithub from '../assets/bxl-github.svg'
-// import { ReactComponent as IconLinkedin } from '../assets/bxl-linkedin-square.svg'
 function SocialContent() {
     return (
         <div className='social-content'>

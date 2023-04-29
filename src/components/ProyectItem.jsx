@@ -1,11 +1,6 @@
 import React from 'react'
 import proyectos from '../assets/proyects.json'
-// async function getData() {
-//     const res = await fetch('../assets/proyects.json')
-//     const data = await res.json()
-//     return data
-//     console.log(res);
-// }
+
 function ProyectItem() {
     const proyects = Object.entries(proyectos)
     return (
