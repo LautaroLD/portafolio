@@ -1,11 +1,12 @@
 .proyects-section {
-    padding         : 70px 0px;
     background-color: $color-gray-light;
-
+    
     &__title {
+        padding-block         : 30px;
         color          : $color-dark;
         display        : flex;
         font-size      : $font-s-title;
+        font-weight: $font-w-b;
         gap            : 5px;
         justify-content: center;
         text-align     : center;
@@ -37,6 +38,7 @@
 
             img {
                 width        : 100%;
+                aspect-ratio: 3/2;
                 border-radius: 10px;
             }
 

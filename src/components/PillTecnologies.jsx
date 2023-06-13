@@ -1,43 +1,58 @@
 import React from 'react'
-
-function PillTecnologies() {
-    const tecnologies = [
+import { FaReact } from 'react-icons/fa'
+import { BsBootstrap, BsGit } from 'react-icons/bs'
+import { TbBrandTailwind, TbBrandRedux, TbBrandTypescript } from 'react-icons/tb'
+import { IoLogoHtml5, IoLogoCss3, IoLogoSass, IoLogoJavascript } from 'react-icons/io'
+function PillTechnologies() {
+    const technologies = [
         {
-            'name': 'Html',
-            'class': 'pill-html'
+            name: 'Html',
+            icon: <IoLogoHtml5 color='#f0652a' />
         },
         {
-            'name': 'Css',
-            'class': 'pill-css'
+            name: 'Css',
+            icon: <IoLogoCss3 color='#34aadc' />
         },
         {
-            'name': 'Sass',
-            'class': 'pill-sass'
+            name: 'Sass',
+            icon: <IoLogoSass color='#ca669c' />
         },
         {
-            'name': 'Javascript',
-            'class': 'pill-js'
+            name: 'Javascript',
+            icon: <IoLogoJavascript color='#e8d44c' />
         },
         {
-            'name': 'React',
-            'class': 'pill-react'
+            name: 'Typescript',
+            icon: <TbBrandTypescript color='#3178C6' />
         },
         {
-            'name': 'Git',
-            'class': 'pill-git'
+            name: 'React',
+            icon: <FaReact color='#61dbfb' />
         },
         {
-            'name': 'Bootstrap',
-            'class': 'pill-bootstrap'
+            name: 'Redux Toolkit',
+            icon: <TbBrandRedux color='#764ABC' />
+        },
+        {
+            name: 'Git',
+            icon: <BsGit color='#f05133' />
+        },
+        {
+            name: 'Bootstrap',
+            icon: <BsBootstrap color='#7952b3' />
+        },
+        {
+            name: 'Tailwind',
+            icon: <TbBrandTailwind color='#38bdf8' />
         }
     ]
     return (
-        <div className='pills-tecnologies'>
-            {tecnologies.map((item) =>
-                <p key={item.name} className={`pill ${item.class}`} >{item.name}</p>
+        <div className='flex gap-8 justify-center flex-wrap'>
+            {technologies.map((item, index) =>
+                <span key={`technologies-${index}`} title={item.name} className='text-[60px] hover:scale-[1.4] transition-transform'>{item.icon}</span>
             )}
         </div>
     )
 }
 
-export default PillTecnologies
+export default PillTechnologies

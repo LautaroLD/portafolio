@@ -4,64 +4,18 @@
     flex-direction    : column;
     gap               : 10px;
     justify-content   : center;
-    min-height        : 100vh;
-    padding           : 10px 5vw 0px;
+    // min-height        : 100vh;
+    padding           : 5vh 5vw ;
     // padding-top    : 10px;
     position          : relative;
     text-align        : center;
 
-    @include respond-to-tablet() {
-        padding-top: 0;
-    }
-
     .about-me__logo-top {
-        width           : 60px;
+        width           : 70px;
         margin          : auto auto 0;
         border-radius   : 50%;
         background-color: $color-light;
     }
-
-    .about-me__title {
-        font-size: $font-s-title;
-
-        @include respond-to-tablet() {
-            font-size  : 4rem;
-            line-height: .5;
-        }
-
-    }
-
-    .about-me__content {
-        font-size  : 1.8rem;
-        line-height: 1.5;
-        margin     : 0 auto;
-        max-width  : 1024px;
-    }
-
-    .social-content {
-        display        : flex;
-        justify-content: center;
-        gap            : 15px;
-    }
-
-    .social-imgs {
-        transition: all .5s;
-        width     : 50px;
-        height    : 50px;
-
-        .social__icon {
-            width : inherit;
-            height: inherit;
-            color : $color-light;
-        }
-
-        &:hover {
-            filter: invert(1);
-        }
-
-    }
-
-
     .btn-cv {
         border         : 1px solid $color-light;
         color          : $color-light;
@@ -71,61 +25,16 @@
         padding        : 10px 30px;
         text-decoration: none;
         transition     : all .5s;
-        width          : fit-content;
+        width          : 100%;
+        @include respond-to-tablet(){
+            width          : fit-content;
+
+        }
 
         &:hover {
             background-color: $color-light;
             color           : $color-dark;
         }
 
-    }
-
-    .pills-tecnologies {
-        display        : flex;
-        flex-wrap      : wrap;
-        gap            : 10px;
-        justify-content: center;
-        margin         : auto auto 75px;
-
-        h3 {
-            font-size: 2rem;
-            width    : 100%;
-        }
-
-        .pill {
-            border-radius: 15px;
-            color        : $color-dark;
-            font-size    : 1.4rem;
-            font-weight  : $font-w-b;
-            padding      : 3px 10px;
-
-            &-html {
-                background-color: $color-pill-html;
-            }
-
-            &-css {
-                background-color: $color-pill-css;
-            }
-
-            &-sass {
-                background-color: $color-pill-sass;
-            }
-
-            &-js {
-                background-color: $color-pill-js;
-            }
-
-            &-react {
-                background-color: $color-pill-react;
-            }
-
-            &-git {
-                background-color: $color-pill-git;
-            }
-
-            &-bootstrap {
-                background-color: $color-pill-bt;
-            }
-        }
     }
 }

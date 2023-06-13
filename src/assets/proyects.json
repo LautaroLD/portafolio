@@ -1,4 +1,11 @@
 {
+    "pigmeo": {
+        "name": "Pigmeo",
+        "url": "https://pigmeo-app.netlify.app/",
+        "repository": "https://github.com/No-Country/s8-14-t-mern",
+        "info": "Billetera virtual con opción de realizar pagos y transferencias por medio de QR, realizar recargas, llevar un registro de los movimientos y visualizar movimientos financieros y cripto. Creado con React.js, Axios, Tailwind  y Typescript",
+        "img": "https://phx02pap002files.storage.live.com/y4m-CVR_9Jbp1kXIi8JW87DCeGlXzBxNXz693BCe8CYwlsVisMEtjkbKKwS14NIGEBPhlx6VyfjWfAWvL5_eiB6NJlpqCoLYQ-2qLAn7oiKvkf-Wk3qYaK-IO1ASf6hs1znn7ySUgjB29QkpFvl4F2OROnYvskpU6pp3_ROROvsPQi28m7c7wCFaWaCiCslLzED?width=660&height=481&cropmode=none"
+    },
     "moviesGo": {
         "name": "MoviesGo",
         "url": "https://moviesgo.netlify.app/",
