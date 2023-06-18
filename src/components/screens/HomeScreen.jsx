@@ -1,14 +1,14 @@
 import React from 'react'
 import AboutMeSection from '../AboutMeSection'
 import Form from '../Form'
-import ProyectsSection from '../ProyectsSection'
+import ProjectsSection from '../ProjectsSection'
 
 function HomeScreen() {
     return (
         <>
             <main className='main'>
                 <AboutMeSection />
-                <ProyectsSection />
+                <ProjectsSection />
             </main>
             <footer className='footer'>
                 <h2 className='footer-title'>Pongámonos en contacto</h2>
