@@ -1,6 +1,6 @@
 import React from 'react';
-import MessageSendScreen from './components/screens/MessageSendScreen';
-import HomeScreen from './components/screens/HomeScreen';
+import MessageSendScreen from './screens/MessageSendScreen';
+import HomeScreen from './screens/HomeScreen';
 
 function App() {
 	return (
