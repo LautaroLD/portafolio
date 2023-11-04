@@ -1,37 +1,53 @@
 {
+    "compañero-viajero": {
+        "name": "Compañero viajero",
+        "url": "https://pigmeoapp.netlify.app/",
+        "repository": "https://github.com/No-Country/s8-14-t-mern",
+        "info": "Aplicación móvil de carpooling que tiene como objetivo permitir a los docentes una mejor gestión respecto a su traslado a las instituciones educativas, donde puedan compartir gastos de movilidad y reducir la huella de carbono. Desarrollado en React Native y Typescript.",
+        "img": "https://onedrive.live.com/embed?resid=16A865F844F501DD%21172328&authkey=%21AK_iWexaIoyU4Ck&width=624&height=640",
+        "mobile": "true"
+    },
     "pigmeo": {
         "name": "Pigmeo",
         "url": "https://pigmeoapp.netlify.app/",
         "repository": "https://github.com/No-Country/s8-14-t-mern",
-        "info": "Billetera virtual con opción de realizar pagos y transferencias por medio de QR, realizar recargas, llevar un registro de los movimientos y visualizar movimientos financieros y cripto. Creado con React.js, Axios, Tailwind  y Typescript",
-        "img": "https://phx02pap002files.storage.live.com/y4m-CVR_9Jbp1kXIi8JW87DCeGlXzBxNXz693BCe8CYwlsVisMEtjkbKKwS14NIGEBPhlx6VyfjWfAWvL5_eiB6NJlpqCoLYQ-2qLAn7oiKvkf-Wk3qYaK-IO1ASf6hs1znn7ySUgjB29QkpFvl4F2OROnYvskpU6pp3_ROROvsPQi28m7c7wCFaWaCiCslLzED?width=660&height=481&cropmode=none"
+        "info": "Billetera virtual con opción de realizar pagos y transferencias por medio de QR, realizar recargas, llevar un registro de los movimientos y visualizar mercado crypto. Desarrollado con React.js, Axios, Tailwind  y Typescript.",
+        "img": "https://onedrive.live.com/embed?resid=16A865F844F501DD%21172338&authkey=%21AESXD2nlkqYXQzE&width=694&height=640",
+        "mobile": "true"
     },
     "moviesGo": {
         "name": "MoviesGo",
         "url": "https://moviesgo.netlify.app/",
         "repository": "https://github.com/LautaroLD/moviesgo",
-        "info": "Sitio donde podemos ver películas con detalles de cada una, navegar entre sí, buscar por nombre, filtrar por géneros y agregar a listas de favoritos. Creado con React.js, utiliza Redux, Axios y SASS para los estilos",
-        "img": "https://phx02pap002files.storage.live.com/y4m9IpFmfHfKM7l69rbhnFKtxWwRS-pjqJ4T_ny9Ur5ZY5BzCkdlty3oU9Dx6uiz-AWRvdwI5Gl1zjv3v0e8sulYd5cy-xL21i0QbtpMn6GXtQCPMPlZmESV76Uxc6ecrbBImstAyAPl4OBhp0Cb2gxBiFWE253nOEVQbOF85J0Kx8UDs-UBkz2VgiKSBD8OqwQ?width=660&height=397&cropmode=none"
+        "info": "Sitio donde podemos ver películas con detalles de cada una, navegar entre sí, buscar por nombre, filtrar por géneros y agregar a listas de favoritos. Desarrollado con React.js, utiliza Redux, Axios y SASS para los estilos.",
+        "img": "https://onedrive.live.com/embed?resid=16A865F844F501DD%21172337&authkey=%21AESXD2nlkqYXQzE&width=960&height=432"
+    },
+    "aTempo": {
+        "name": "aTempo",
+        "url": "https://atempoapp.netlify.app/",
+        "repository": "https://github.com/LautaroLD/aTempo",
+        "info": " Sitio web, enfocado en productos de danza, permite a los consumidores comprar y vender. En la app de A tempo, los usuarios pueden explorar catálogos de productos, agregarlos a su carrito de compras, realizar pagos y recibir productos en sus domicilios. Desarrollado con React.js, Typescript, Redux, Axios y SASS para los estilos.",
+        "img": "https://onedrive.live.com/embed?resid=16A865F844F501DD%21172330&authkey=%21AIBFXe1irjb9p3M&width=660"
     },
     "api-countries": {
         "name": "Countries page",
         "url": "https://lautarold.github.io/rest-countries-api/",
         "repository": "https://github.com/LautaroLD/rest-countries-api",
-        "info": "Sitio con detalles de países, podemos abrir un modal con más información y navegar entre los países fronterizos. También es posible filtrar por región, buscar por nombre y alternar entre modo claro y obscuro. Creado en React.js utilizando Hooks y localStorage. Para el estilo empleo SASS.",
-        "img": "https://chi01pap002files.storage.live.com/y4m-s5lw5bKTwm6jwu9GA19XWQ8iblVyE5Ygvx8ab6YwZz2L1t7Dgus5tssqpQKRlxkU37_H45BhN8P6obvfue33Qkg_tH2FL41Cdj1qI6UkINuexXjamkaTVYxVDUF2Wf5E_pPcbUfjNipxetT1TCkgIA6-zGZ72dKVYmAMhjacinufdqg7A_6aZECGzhr2V4l?width=660&height=389&cropmode=none"
+        "info": "Sitio con detalles de países, podemos abrir un modal con más información y navegar entre los países fronterizos. También es posible filtrar por región, buscar por nombre y alternar entre modo claro y obscuro. Desarrollado en React.js utilizando Hooks y localStorage. Para el estilo empleo SASS.",
+        "img": "https://onedrive.live.com/embed?resid=16A865F844F501DD%21172329&authkey=%21AHY9MHMv-EwYPpM&width=660"
     },
     "rock-paper-scissors": {
         "name": "Rock Paper Scissors",
         "url": "https://lautarold.github.io/r-p-s/",
         "repository": "https://github.com/LautaroLD/r-p-s",
-        "info": "Juego clásico de piedra, papel o tijera, creado en React.js con Bootstrap y SASS. Contiene un contador para los puntos. También un modal con las reglas del juego y es responsive design.",
-        "img": "https://chi01pap002files.storage.live.com/y4mk0edTmRq359f9GL94yGKlKO6wjOS1SVNf97SBX_luJZj2752RD36T8D-S6unBDqTsKUz2G5-IpvrVD9oo_iO0JchWHBWXwTlaMu1CvbAc2Yh4uvX1PZKiPtnRRtSnCuMxqgkxAnOucok9aM1uM6v-AyodN2EX01lG22gthhz7_kCmsevYI9n_xBqRwtqoKVz?width=660&height=392&cropmode=none"
+        "info": "Juego clásico de piedra, papel o tijera, desarrollado en React.js con Bootstrap y SASS. Contiene un contador para los puntos. También un modal con las reglas del juego y es responsive design.",
+        "img": "https://onedrive.live.com/embed?resid=16A865F844F501DD%21172334&authkey=%21ABNpSaTQartGRwk&width=660"
     },
     "task-manager": {
         "name": "Task manager",
         "url": "https://lautarold.github.io/task-manager/",
         "repository": "https://github.com/LautaroLD/task-manager",
         "info": "Sitio para crear una lista de tareas, podemos agregar, eliminar y marcar como completado cada ítem. Desarrollado en React.js utilizando Hooks y localStorage para permitir la persistencia de las tareas y sus estados. Para el estilo empleo SASS y cuenta con responsive design.",
-        "img": "https://chi01pap002files.storage.live.com/y4muA_TsfgyCD4EtzPlVFwmIDiB5Ft5n8z_ha3XBMSa6rWNxEL7cirhrP5_JVmuWtpRa3u0DIPoGK0QU-25M71jB1eMtloe36WAc4W_anA3NIDWRT6-w6EcpVfHSSYh7ho3aaE0Q4WCrZwYGwA-OlEOQRXed2t3mhXMzOYi89KwgDhdzr-lNRz-lISjAiF0WoPh?width=660&height=394&cropmode=none"
+        "img": "https://onedrive.live.com/embed?resid=16A865F844F501DD%21172335&authkey=%21ACtw0dPlLAuwZ_o&width=660"
     }
 }

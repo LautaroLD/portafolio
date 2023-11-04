@@ -8,6 +8,7 @@ function AboutMeSection() {
             <LogoComponent site='top' />
             <p className='text-[2rem] font-medium'>Lautaro Duran</p>
             <h1 className='text-[4rem] font-bold'>Desarrollador web frontend</h1>
+            <img loading='lazy' alt='Lautaro Duran foto' src='https://onedrive.live.com/embed?resid=16A865F844F501DD%21172332&authkey=%21AFxeCKLETajoP2E&width=229&height=230' className='rounded-full m-auto w-3/6 max-w-[250px] aspect-square' />
             <article className='max-w-[800px] w-[90vw] flex flex-col m-auto mb-[50px] text-start'>
                 <h2 className='text-[2.5rem] font-bold underline'>Sobre mi</h2>
                 <p className='text-[2rem] mb-[20px]'>Con una fuerte cultura del trabajo, dedicación, creando soluciones y con un aprendizaje continuo busco gran calidad en mis resultados.
