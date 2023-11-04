@@ -2,7 +2,7 @@ import React from 'react'
 
 function Form() {
     return (
-        <form className='form' action="https://formsubmit.co/duranlautarogabriel@gmail.com" method="POST">
+        <form className='form' name='form-contacto' netlify>
             <input className='input' placeholder='Nombre' type="text" name="name" required />
             <input className='input' placeholder='Email' type="email" name="email" required />
             <input type="hidden" name="_template" value="table"></input>
