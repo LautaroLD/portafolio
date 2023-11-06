@@ -8,8 +8,8 @@ function App() {
 		<Suspense fallback={<Loading />}>
 			<BrowserRouter>
 				<Routes>
-					<Route exact path='/' element={<HomeScreen />} />
-					<Route exact path='/sendMessage' element={<MessageSendScreen />} />
+					<Route path="/" element={<HomeScreen />} />
+					<Route path="/sendMessage" element={<MessageSendScreen />} />
 					<Route path="*" element={<Navigate to='/' />} />
 				</Routes>
 			</BrowserRouter>
