@@ -9,7 +9,7 @@ function App() {
 			<BrowserRouter>
 				<Routes>
 					<Route path="/" element={<HomeScreen />} />
-					<Route path="/sendMessage" element={<MessageSendScreen />} />
+					<Route path="sendMessage" element={<MessageSendScreen />} />
 					<Route path="*" element={<Navigate to='/' />} />
 				</Routes>
 			</BrowserRouter>
