@@ -10,9 +10,9 @@ function App() {
 		// <Suspense fallback={<Loading />}>
 		<BrowserRouter>
 			<Routes>
-				<Route path="/" element={<HomeScreen />} />
-				<Route path="/sendMessage" element={<MessageSendScreen />} />
+				<Route path="/send-message" element={<MessageSendScreen />} />
 				<Route path="*" element={<Navigate to='/' />} />
+				<Route path="/" element={<HomeScreen />} />
 			</Routes>
 		</BrowserRouter>
 		// </Suspense>
