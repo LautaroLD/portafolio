@@ -3,9 +3,9 @@ import ProjectItem from './ProjectItem';
 
 function ProjectsSection() {
     return (
-        <section className='projects-section'>
-            <h2 className='projects-section__title'> <hr /> Proyectos <hr /></h2>
-            <div className='projects-container divide-y-2 divide-[#5975c998]'>
+        <section className='bg-gray-light pb-12'>
+            <h2 className='py-7 text-dark flex text-s-title font-w-b gap-1 justify-center text-center'> <hr className='bg-dark border-0 h-[1px] m-auto w-full' /> Proyectos <hr className='bg-dark border-0 h-[1px] m-auto w-full' /></h2>
+            <div className='flex flex-wrap justify-center divide-y-2 divide-bg'>
                 <ProjectItem />
             </div>
         </section>

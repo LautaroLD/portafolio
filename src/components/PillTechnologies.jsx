@@ -49,7 +49,7 @@ function PillTechnologies() {
     return (
         <div className='flex gap-8 justify-center flex-wrap'>
             {technologies.map((item, index) =>
-                <span key={`technologies-${index}`} title={item.name} className='text-[60px] hover:scale-[1.4] transition-transform duration-200'>{item.icon}</span>
+                <span key={`technologies-${index}`} title={item.name} className='text-s-icon hover:scale-[1.4] transition-transform duration-200'>{item.icon}</span>
             )}
         </div>
     )

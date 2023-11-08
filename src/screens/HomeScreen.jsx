@@ -7,12 +7,12 @@ import SocialContent from '../components/SocialContent'
 function HomeScreen() {
     return (
         <>
-            <main className='main'>
+            <main className='font-f'>
                 <AboutMeSection />
                 <ProjectsSection />
             </main>
-            <footer className='footer'>
-                <h2 className='footer-title'>Pongámonos en contacto</h2>
+            <footer className='flex flex-col justify-center items-center py-5 w-full gap-10 bg-dark font-f'>
+                <h2 className='text-center text-light text-s-title font-w-l'>Pongámonos en contacto</h2>
                 <Form />
                 <SocialContent />
             </footer>

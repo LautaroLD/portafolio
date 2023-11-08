@@ -1,21 +1,20 @@
 import React, { lazy, Suspense } from 'react';
 import { Route, Routes, BrowserRouter, Navigate } from 'react-router-dom';
-// import Loading from '../components/Loading';
-import HomeScreen from '../screens/HomeScreen'
-import MessageSendScreen from '../screens/MessageSendScreen'
-// const HomeScreen = lazy(() => import('../screens/HomeScreen'))
-// const MessageSendScreen = lazy(() => import('../screens/MessageSendScreen'))
+import Loading from '../components/Loading';
+const HomeScreen = lazy(() => import('../screens/HomeScreen'))
+const MessageSendScreen = lazy(() => import('../screens/MessageSendScreen'))
+
 function App() {
 	return (
-		// <Suspense fallback={<Loading />}>
-		<BrowserRouter>
-			<Routes>
-				<Route path="/" element={<HomeScreen />} />
-				<Route path="/send-message" element={<MessageSendScreen />} />
-				<Route path="*" element={<Navigate to='/' />} />
-			</Routes>
-		</BrowserRouter>
-		// </Suspense>
+		<Suspense fallback={<Loading />}>
+			<BrowserRouter>
+				<Routes>
+					<Route path="/" element={<HomeScreen />} />
+					<Route path="/send-message" element={<MessageSendScreen />} />
+					<Route path="*" element={<Navigate to='/' />} />
+				</Routes>
+			</BrowserRouter>
+		</Suspense>
 	);
 }
 

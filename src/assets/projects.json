@@ -1,8 +1,8 @@
 {
     "compañero-viajero": {
         "name": "Compañero viajero",
-        "url": "https://pigmeoapp.netlify.app/",
-        "repository": "https://github.com/No-Country/s8-14-t-mern",
+        "url": "",
+        "repository": "https://github.com/No-Country/s9-17-t-reactnative",
         "info": "Aplicación móvil de carpooling que tiene como objetivo permitir a los docentes una mejor gestión respecto a su traslado a las instituciones educativas, donde puedan compartir gastos de movilidad y reducir la huella de carbono. Desarrollado en React Native y Typescript.",
         "img": "https://onedrive.live.com/embed?resid=16A865F844F501DD%21172328&authkey=%21AK_iWexaIoyU4Ck&width=624&height=640",
         "mobile": "true"
@@ -19,14 +19,14 @@
         "name": "MoviesGo",
         "url": "https://moviesgo.netlify.app/",
         "repository": "https://github.com/LautaroLD/moviesgo",
-        "info": "Sitio donde podemos ver películas con detalles de cada una, navegar entre sí, buscar por nombre, filtrar por géneros y agregar a listas de favoritos. Desarrollado con React.js, utiliza Redux, Axios y SASS para los estilos.",
+        "info": "Sitio donde podemos ver películas con detalles de cada una, buscar por nombre, filtrar por géneros y agregar a listas de favoritos. Desarrollado con React.js, utiliza Redux, Axios y SASS para los estilos.",
         "img": "https://onedrive.live.com/embed?resid=16A865F844F501DD%21172337&authkey=%21AESXD2nlkqYXQzE&width=960&height=432"
     },
     "aTempo": {
         "name": "aTempo",
         "url": "https://atempoapp.netlify.app/",
         "repository": "https://github.com/LautaroLD/aTempo",
-        "info": " Sitio web, enfocado en productos de danza, permite a los consumidores comprar y vender. En la app de A tempo, los usuarios pueden explorar catálogos de productos, agregarlos a su carrito de compras, realizar pagos y recibir productos en sus domicilios. Desarrollado con React.js, Typescript, Redux, Axios y SASS para los estilos.",
+        "info": " E-commerce, enfocado en calzados de danza, permite a los consumidores comprar y vender. En la app de A tempo, los usuarios pueden explorar catálogos de calzados, agregarlos a su carrito de compras, realizar pagos y recibir productos en sus domicilios. Desarrollado con React.js, Typescript, Redux, Axios y SASS para los estilos.",
         "img": "https://onedrive.live.com/embed?resid=16A865F844F501DD%21172330&authkey=%21AIBFXe1irjb9p3M&width=660"
     },
     "api-countries": {
