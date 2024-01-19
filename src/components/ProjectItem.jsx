@@ -3,6 +3,10 @@ import proyectos from '../assets/projects.json'
 
 function ProjectItem() {
     const projects = Object.entries(proyectos)
+    const mobile = 
+[        "Compañero viajero",
+         "Cuentas claras"
+    ]
     return (
         <React.Fragment>
             {projects.map((item, index) =>
@@ -13,7 +17,7 @@ function ProjectItem() {
                         <p className='text-s-text m-auto leading-loose'>{item[1].info}</p>
                         <div className='flex justify-around items-center pt-3'>
                             {
-                                item[1].name != "Compañero viajero" && <a href={item[1].url} target='_blank' className=' rounded-xl text-s-text font-w-b py-2 px-4 decoration-0 bg-btn-bg text-light hover:bg-btn-bg-hover hover:scale-110 duration-300' rel="noreferrer" >Visitar</a>
+                                 mobile[item[1].name] && <a href={item[1].url} target='_blank' className=' rounded-xl text-s-text font-w-b py-2 px-4 decoration-0 bg-btn-bg text-light hover:bg-btn-bg-hover hover:scale-110 duration-300' rel="noreferrer" >Visitar</a>
                             }
                             <a href={item[1].repository} target='_blank' className='rounded-xl text-s-text font-w-b py-2 px-4 decoration-0 text-gray hover:scale-110 duration-300 hover:text-btn-bg-hover' rel="noreferrer">Repositorio</a>
                         </div>

@@ -1,4 +1,12 @@
 {
+    "cuentas-claras": {
+        "name": "Cuentas claras",
+        "url": "",
+        "repository": "https://github.com/LautaroLD/cuentasclaras",
+        "info": "Organizador de gastos donde el usuario puede establecer un presupuesto, cargar sus gastos y recibir una notificación confirmando la carga, al mismo tiempo puede ver un gráfico donde se ve cuanto representa cada gasto y el dinero disponible. Desarrollado en React Native y Typescript.",
+        "img": "https://onedrive.live.com/embed?resid=16A865F844F501DD%21172374&authkey=%21AESXD2nlkqYXQzE&width=660",
+        "mobile": "true"
+    },
     "compañero-viajero": {
         "name": "Compañero viajero",
         "url": "",

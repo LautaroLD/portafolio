@@ -9,7 +9,7 @@ function AboutMeSection() {
             <p className='text-s-text font-medium'>Lautaro Duran</p>
             <h1 className='text-s-title font-bold'>Desarrollador web frontend</h1>
             <img loading='lazy' alt='Lautaro Duran foto' src='https://onedrive.live.com/embed?resid=16A865F844F501DD%21172332&authkey=%21AFxeCKLETajoP2E&width=229&height=230' className='rounded-full m-auto w-3/6 max-w-[250px] aspect-square' />
-            <article className='max-w-[800px] w-[90vw] flex flex-col m-auto mb-[50px] text-start'>
+            <article className='max-w-[850px] w-[90vw] flex flex-col m-auto mb-[50px] text-start'>
                 <h2 className='text-s-title font-bold underline'>Sobre mi</h2>
                 <p className='text-s-text mb-[20px] leading-9'>Con una fuerte cultura del trabajo, dedicación, creando soluciones y con un aprendizaje continuo busco gran calidad en mis resultados.
                     Con disciplina, autonomía y aplicando razonamiento lógico utilizo mis habilidades en las distintas tecnologías para agregar valor a cada proyecto. Siempre estoy dispuesto a asumir nuevos desafíos y enfrentar problemas complejos para encontrar soluciones innovadoras.</p>
