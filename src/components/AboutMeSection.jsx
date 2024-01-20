@@ -15,7 +15,7 @@ function AboutMeSection() {
                     Con disciplina, autonomía y aplicando razonamiento lógico utilizo mis habilidades en las distintas tecnologías para agregar valor a cada proyecto. Siempre estoy dispuesto a asumir nuevos desafíos y enfrentar problemas complejos para encontrar soluciones innovadoras.</p>
                 <SocialContent />
             </article>
-            <article className='max-w-[800px] w-[90vw] flex flex-col m-auto gap-5 '>
+            <article className='max-w-[850px] w-[90vw] flex flex-col m-auto gap-5 '>
                 <h3 className='text-s-title font-bold underline text-start'>Tecnologías</h3>
                 <PillTechnologies />
             </article>
