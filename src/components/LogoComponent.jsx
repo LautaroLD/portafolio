@@ -1,8 +1,12 @@
+import { AdvancedImage } from '@cloudinary/react';
 import React from 'react'
+import { cld } from '../utils/cloudinary';
 
 function LogoComponent() {
     return (
-        <img loading='lazy' className="w-20 m-auto bg-light rounded-full" src='https://onedrive.live.com/embed?resid=16A865F844F501DD%21172331&authkey=%21AAj0abtDy5BEUYA&width=500&height=500' alt='Logo' />
+        <div className="w-20 m-auto bg-light rounded-full">
+            <AdvancedImage cldImg={cld.image('projects/logo')}/>
+        </div>
     )
 }
 
