@@ -6,7 +6,7 @@ import { AdvancedImage } from '@cloudinary/react';
 import { cld } from '../utils/cloudinary';
 function AboutMeSection() {
     return (
-        <section className='bg-bg-gradient flex flex-col gap-3 justify-center p-[5%] relative text-center text-light'>
+        <section className='bg-bg-gradient flex flex-col gap-3 justify-center p-[5%] pb-[7%] relative text-center mb-10 text-light spikes '>
             <LogoComponent />
             <p className='text-s-text font-medium'>Lautaro Duran</p>
             <h1 className='text-s-title font-bold'>Desarrollador web frontend</h1>

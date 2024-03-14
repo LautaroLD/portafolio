@@ -4,3 +4,20 @@
 @tailwind components;
 @tailwind utilities;
 
+.spikes {
+  position: relative;
+}
+
+.spikes::after {
+  content            : '';
+  position           : absolute;
+  right              : 0;
+  left               : -0%;
+  top                : 100%;
+  z-index            : 10;
+  display            : block;
+  height             : 50px;
+  background-size    : 50px 100%;
+  background-image   : linear-gradient(135deg, #000 25%, transparent 25%), linear-gradient(225deg, #000 25%, transparent 25%);
+  background-position: 0 0;
+}
