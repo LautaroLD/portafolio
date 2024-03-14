@@ -4,8 +4,6 @@ import LogoComponent from './LogoComponent';
 import SocialContent from './SocialContent';
 import { AdvancedImage } from '@cloudinary/react';
 import { cld } from '../utils/cloudinary';
-import { byRadius } from '@cloudinary/url-gen/actions/roundCorners';
-import { fill } from '@cloudinary/url-gen/actions/resize';
 function AboutMeSection() {
     return (
         <section className='bg-bg-gradient flex flex-col gap-3 justify-center p-[5%] relative text-center text-light'>
@@ -13,7 +11,7 @@ function AboutMeSection() {
             <p className='text-s-text font-medium'>Lautaro Duran</p>
             <h1 className='text-s-title font-bold'>Desarrollador web frontend</h1>
             <div className='m-auto w-3/6 max-w-[250px] flex'>
-                <AdvancedImage cldImg={cld.image('projects/mia').roundCorners(byRadius(50)).resize(fill().aspectRatio('1:1'))}/>
+                <AdvancedImage cldImg={cld.image('projects/mia')} className='w-full rounded-full' alt='Lautaro photo'/>
             </div>
             <article className='max-w-[850px] w-[90vw] flex flex-col m-auto mb-[50px] text-start'>
                 <h2 className='text-s-title font-bold underline'>Sobre mi</h2>
