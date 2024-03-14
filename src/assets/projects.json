@@ -3,7 +3,7 @@
     "name": "estacionApp",
     "url": "https://estacionapp.vercel.app/",
     "repository": "https://github.com/No-Country/s13-04-t-node-react",
-    "info": "aplicación que simplifica la búsqueda y reserva de estacionamientos donde un usuario puede generar una fuente de ingresos con su garaje alquilándolo a un conductor. Desarrollado en React, Typescript y Tailwind.",
+    "info": "Aplicación que simplifica la búsqueda y reserva de estacionamientos donde un usuario puede generar una fuente de ingresos con su garaje alquilándolo a un conductor. Desarrollado en React, Typescript y Tailwind.",
     "img": "projects/estacionApp",
     "mobile": "true"
   },
