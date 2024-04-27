@@ -1,4 +1,12 @@
 {
+  "gestor360": {
+    "name": "Gestor 360",
+    "url": "https://gestor-360.vercel.app/",
+    "repository": "https://github.com/No-Country/s14-05-t-node-react",
+    "info": "Aplicación web para emprendedores, centrada en facilitar la gestión diaria de sus negocios. La aplicación se enfocará en simplificar las operaciones comerciales, financieras y de gestión de relaciones con los clientes, permitiendo a los emprendedores optimizar su tiempo y recursos. Desarrollada en Next.js con Typescript y Tailwind",
+    "img": "projects/gestor360",
+    "mobile": "true"
+  },
   "estacionApp": {
     "name": "estacionApp",
     "url": "https://estacion-app.netlify.app/",
