@@ -7,9 +7,11 @@ module.exports = {
         'f': ['Poppins', 'sans-serif']
       },
       fontSize: {
-        's-text': '1.2rem',
-        's-title': '1.8rem',
-        's-icon': '2.5rem'
+        's-text': '1rem',
+        's-primary-title': '5rem',
+        's-title-mobile': '2.7rem',
+        's-title': '2rem',
+        's-icon': '2rem'
       },
       fontWeight: {
         'w-b': '700',
@@ -17,12 +19,12 @@ module.exports = {
       },
       colors: {
         'dark': '#000000',
-        'gray': '#585858',
+        'gray': '#353535',
         'gray-light': '#dddddd',
         'light': '#ffffff',
         'bg': '#5975c9',
         'btn-bg': '#3a7dc9',
-        'btn-bg-hover': '#1111ad',
+        'btn-bg-hover': '#1111aa',
         'pill-html': '#f0652a',
         'pill-bt': '#7952b3',
         'pill-css': '#34aadc',
@@ -37,4 +39,4 @@ module.exports = {
     }
   },
   plugins: [],
-}
+};

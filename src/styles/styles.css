@@ -4,20 +4,17 @@
 @tailwind components;
 @tailwind utilities;
 
-.spikes {
-  position: relative;
+html {
+  scroll-behavior: smooth;
+  overflow-x     : hidden;
 }
 
-.spikes::after {
-  content            : '';
-  position           : absolute;
-  right              : 0;
-  left               : -0%;
-  top                : 100%;
-  z-index            : 10;
-  display            : block;
-  height             : 50px;
-  background-size    : 50px 100%;
-  background-image   : linear-gradient(135deg, #000 25%, transparent 25%), linear-gradient(225deg, #000 25%, transparent 25%);
-  background-position: 0 0;
+.bg-figures {
+  background: radial-gradient(circle farthest-side at 0% 50%, #000000 23.5%, #0000 0)18.9px 27px, radial-gradient(circle farthest-side at 0% 50%, #1d1d1d 24%, #0000 0)17.1px 27px,
+    linear-gradient(#000000 14%, #0000 0, #0000 85%, #000000 0)0 0,
+    linear-gradient(150deg, #000000 24%, #1d1d1d 0, #1d1d1d 26%, #0000 0, #0000 74%, #1d1d1d 0, #1d1d1d 76%, #000000 0)0 0,
+    linear-gradient(30deg, #000000 24%, #1d1d1d 0, #1d1d1d 26%, #0000 0, #0000 74%, #1d1d1d 0, #1d1d1d 76%, #000000 0)0 0,
+    linear-gradient(90deg, #1d1d1d 2%, #000000 0, #000000 98%, #1d1d1d 0%)0 0 #000000;
+  background-size : 36px 54px;
+  background-color: #000000;
 }
