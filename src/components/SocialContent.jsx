@@ -30,6 +30,8 @@ function SocialContent() {
         <img
           src={PlatziLogo}
           className='w-[2rem] invert hover:scale-[1.4] duration-[700ms] text-light'
+          alt='Platzi logo'
+          title='Platzi logo'
         />
       </a>
     </div>

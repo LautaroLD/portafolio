@@ -21,10 +21,12 @@ function ProjectItem() {
           >
             <AdvancedImage
               cldImg={cld.image(item[1].img).resize(fill()).format('webp')}
+              alt={`${item[1].name} image`}
+              title={`${item[1].name} image`}
             />
           </div>
           <div className='flex-1 flex w-full lg:max-w-[45%] flex-col gap-2'>
-            <h3 className='text-s-title font-bold text-btn-bg'>
+            <h3 className='text-s-title font-bold text-title'>
               {item[1].name}
             </h3>
             <p className='text-s-text m-auto '>{item[1].info}</p>
@@ -33,7 +35,7 @@ function ProjectItem() {
                 <a
                   href={item[1].url}
                   target='_blank'
-                  className=' rounded-xl text-s-text font-w-b py-2 px-4 decoration-0 bg-btn-bg text-light hover:bg-btn-bg-hover hover:scale-110 duration-300'
+                  className=' rounded-xl text-s-text font-w-b py-2 px-4 decoration-0 bg-btn-bg text-light  hover:scale-110 duration-300'
                   rel='noreferrer'
                 >
                   Visitar
@@ -42,7 +44,7 @@ function ProjectItem() {
               <a
                 href={item[1].repository}
                 target='_blank'
-                className='rounded-xl text-s-text font-w-l py-2 px-4 decoration-0 text-light hover:scale-110 duration-300 hover:text-btn-bg-hover'
+                className='rounded-xl text-s-text font-w-l py-2 px-4 decoration-0 text-light hover:scale-110 duration-300'
                 rel='noreferrer'
               >
                 Repositorio
