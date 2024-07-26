@@ -1,7 +1,7 @@
 import ProjectItem from '../components/ProjectItem';
 import Social from '../components/Social';
 
-export default function proyects() {
+export default function ProjectsScreen() {
   return (
     <section className='pb-12 relative text-light px-[7%] bg-figures flex-grow flex flex-col items-center'>
       <div>
