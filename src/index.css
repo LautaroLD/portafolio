@@ -1,0 +1,22 @@
+@import 'primereact/resources/themes/nano/theme.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  margin        : 0%;
+  min-height    : 100dvh;
+  display       : flex;
+  flex-direction: column;
+}
+
+.bg-figures {
+  background: radial-gradient(circle farthest-side at 0% 50%, #000000 23.5%, #0000 0)18.9px 27px, radial-gradient(circle farthest-side at 0% 50%, #424242 24%, #0000 0)17.1px 27px,
+    linear-gradient(#000000 14%, #0000 0, #0000 85%, #000000 0)0 0,
+    linear-gradient(150deg, #000000 24%, #424242 0, #424242 26%, #0000 0, #0000 74%, #424242 0, #424242 76%, #000000 0)0 0,
+    linear-gradient(30deg, #000000 24%, #424242 0, #424242 26%, #0000 0, #0000 74%, #424242 0, #424242 76%, #000000 0)0 0,
+    linear-gradient(90deg, #424242 2%, #000000 0, #000000 98%, #424242 0%)0 0 #000000;
+  background-size : 36px 54px;
+  background-color: #000000;
+}
