@@ -1,5 +1,4 @@
 import ButtonCv from '../components/ButtonCv';
-import Form from '../components/Form';
 import MyImage from '../components/MyImage';
 import Social from '../components/Social';
 import Technologies from '../components/Technologies';
@@ -32,7 +31,6 @@ export default function HomeScreen() {
         <Technologies />
         <ButtonCv />
       </div>
-      <Form />
     </section>
   );
 }
