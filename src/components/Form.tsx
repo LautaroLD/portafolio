@@ -25,18 +25,19 @@ function Form() {
         life: 3000,
       });
   };
-  const handleSubmit = async (event: FormEvent) => {
+  const handleSubmit = (event: FormEvent) => {
     event.preventDefault();
 
     const formData = new FormData(event.target as HTMLFormElement);
-    const name = formData.get('name') as string;
-    const email = formData.get('email') as string;
-    const content = formData.get('content') as string;
+    const searchParams = new URLSearchParams();
 
-    await fetch('/', {
+    for (const pair of formData.entries()) {
+      searchParams.append(pair[0], pair[1] as string);
+    }
+    fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams({ name, email, content }).toString(),
+      body: searchParams.toString(),
     })
       .then(() => {
         show({
