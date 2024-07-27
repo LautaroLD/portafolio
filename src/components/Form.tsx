@@ -33,7 +33,7 @@ function Form() {
     const email = formData.get('email') as string;
     const content = formData.get('content') as string;
 
-    await fetch('./', {
+    await fetch('/contacto', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams({ name, email, content }).toString(),
