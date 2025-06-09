@@ -1,4 +1,12 @@
-[
+[ 
+  {
+    "name": "Redactiva",
+    "url": "https://redactiva.vercel.app/",
+    "repository": "https://github.com/LautaroLD/foro",
+    "info": "Plataforma intuitiva para la creación, exploración y gestión de contenido. Ofrece herramientas avanzadas para publicar ideas, debates, consultas, descubrir tendencias y personalizar la experiencia del usuario dentro de una comunidad activa de escritores y lectores.",
+    "img": "projects/redactiva",
+    "mobile": false
+  },
   {
     "name": "Gestor 360",
     "url": "https://gestor-360.vercel.app/",
