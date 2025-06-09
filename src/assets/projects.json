@@ -2,7 +2,7 @@
   {
     "name": "Gestor 360",
     "url": "https://gestor-360.vercel.app/",
-    "repository": "https://github.com/No-Country/s14-05-t-node-react",
+    "repository": "https://github.com/No-Country-simulation/s14-05-t-node-react",
     "info": "Aplicación web para emprendedores, centrada en facilitar la gestión diaria de sus negocios. La aplicación se enfocará en simplificar las operaciones comerciales, financieras y de gestión de relaciones con los clientes, permitiendo a los emprendedores optimizar su tiempo y recursos. Desarrollada en Next.js con Typescript y Tailwind",
     "img": "projects/gestor360",
     "mobile": true
@@ -10,7 +10,7 @@
   {
     "name": "estacionApp",
     "url": "https://estacion-app.netlify.app/",
-    "repository": "https://github.com/No-Country/s13-04-t-node-react",
+    "repository": "https://github.com/No-Country-simulation/s13-04-t-node-react",
     "info": "Aplicación que simplifica la búsqueda y reserva de estacionamientos donde un usuario puede generar una fuente de ingresos con su garaje alquilándolo a un conductor. Desarrollado en React, Typescript y Tailwind.",
     "img": "projects/estacionApp",
     "mobile": true
@@ -26,7 +26,7 @@
   {
     "name": "Compañero viajero",
     "url": "",
-    "repository": "https://github.com/No-Country/s9-17-t-reactnative",
+    "repository": "https://github.com/No-Country-simulation/s9-17-t-reactnative",
     "info": "Aplicación móvil de carpooling que tiene como objetivo permitir a los docentes una mejor gestión respecto a su traslado a las instituciones educativas, donde puedan compartir gastos de movilidad y reducir la huella de carbono. Desarrollado en React Native y Typescript.",
     "img": "projects/compañero-viajero",
     "mobile": true
@@ -34,7 +34,7 @@
   {
     "name": "Pigmeo",
     "url": "https://pigmeoapp.netlify.app/",
-    "repository": "https://github.com/No-Country/s8-14-t-mern",
+    "repository": "https://github.com/No-Country-simulation/s8-14-t-mern",
     "info": "Billetera virtual con opción de realizar pagos y transferencias por medio de QR, realizar recargas, llevar un registro de los movimientos y visualizar mercado crypto. Desarrollado con React.js, Axios, Tailwind  y Typescript.",
     "img": "projects/pigmeo",
     "mobile": true
@@ -53,14 +53,6 @@
     "repository": "https://github.com/LautaroLD/aTempo",
     "info": " E-commerce, enfocado en calzados de danza, permite a los consumidores comprar y vender. En la app de A tempo, los usuarios pueden explorar catálogos de calzados, agregarlos a su carrito de compras, realizar pagos y recibir productos en sus domicilios. Desarrollado con React.js, Typescript, Redux, Axios y SASS para los estilos.",
     "img": "projects/aTempo",
-    "mobile": false
-  },
-  {
-    "name": "Countries page",
-    "url": "https://lautarold.github.io/rest-countries-api/",
-    "repository": "https://github.com/LautaroLD/rest-countries-api",
-    "info": "Sitio con detalles de países, podemos abrir un modal con más información y navegar entre los países fronterizos. También es posible filtrar por región, buscar por nombre y alternar entre modo claro y obscuro. Desarrollado en React.js utilizando Hooks y localStorage. Para el estilo empleo SASS.",
-    "img": "projects/api-countries",
     "mobile": false
   },
   {
