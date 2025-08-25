@@ -1,21 +1,21 @@
-import { FormEvent, useRef } from 'react';
-import { Toast } from 'primereact/toast';
+import { FormEvent, useRef } from 'react'
+import { Toast } from 'primereact/toast'
 interface Form {
-  name: string;
-  email: string;
-  content: string;
+  name: string
+  email: string
+  content: string
 }
 function Form() {
-  const formRef = useRef<HTMLFormElement | null>(null);
-  const toast = useRef<Toast>(null);
+  const formRef = useRef<HTMLFormElement | null>(null)
+  const toast = useRef<Toast>(null)
   const show = ({
     severity,
     summary,
     detail,
   }: {
-    severity: 'success' | 'error';
-    summary: string;
-    detail: string;
+    severity: 'success' | 'error'
+    summary: string
+    detail: string
   }) => {
     toast.current &&
       toast.current.show({
@@ -23,16 +23,16 @@ function Form() {
         summary,
         detail,
         life: 3000,
-      });
-  };
+      })
+  }
   const handleSubmit = (event: FormEvent) => {
-    event.preventDefault();
+    event.preventDefault()
 
-    const formData = new FormData(event.target as HTMLFormElement);
-    const searchParams = new URLSearchParams();
+    const formData = new FormData(event.target as HTMLFormElement)
+    const searchParams = new URLSearchParams()
 
     for (const pair of formData.entries()) {
-      searchParams.append(pair[0], pair[1] as string);
+      searchParams.append(pair[0], pair[1] as string)
     }
     fetch('/', {
       method: 'POST',
@@ -44,8 +44,8 @@ function Form() {
           detail: 'Pronto recibirás una respuesta.',
           severity: 'success',
           summary: 'Se ha enviado tu mensaje.',
-        });
-        formRef.current?.reset();
+        })
+        formRef.current?.reset()
       })
       .catch(() => {
         show({
@@ -53,9 +53,9 @@ function Form() {
             'Vuelve a intentarlo o envía tu mensaje directamente a duranlautarogabriel@gmail.com',
           severity: 'error',
           summary: 'Ha ocurrido un error.',
-        });
-      });
-  };
+        })
+      })
+  }
 
   return (
     <>
@@ -66,6 +66,7 @@ function Form() {
         name='contact'
         method='post'
         data-netlify='true'
+        data-netlify-recaptcha='true'
       >
         <input type='hidden' name='form-name' value='contact' />
         <label htmlFor='name'>
@@ -105,10 +106,11 @@ function Form() {
         >
           Enviar
         </button>
+        <div data-netlify-recaptcha='true'></div>
       </form>
       <Toast ref={toast} />
     </>
-  );
+  )
 }
 
-export default Form;
+export default Form
