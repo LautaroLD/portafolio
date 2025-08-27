@@ -1,12 +1,12 @@
-import React from 'react';
-import proyectos from '../assets/projects.json';
-import { Project } from '../models';
-import { AdvancedImage } from '@cloudinary/react';
-import { cld } from '../utils/cloudinary';
-import { fill } from '@cloudinary/url-gen/actions/resize';
+import React from 'react'
+import proyectos from '../assets/projects.json'
+import { Project } from '../models'
+import { AdvancedImage } from '@cloudinary/react'
+import { cld } from '../utils/cloudinary'
+import { fill } from '@cloudinary/url-gen/actions/resize'
 function ProjectItem() {
-  const projects: Project[] = proyectos;
-  const mobile = ['Compañero viajero', 'Cuentas claras'];
+  const projects: Project[] = proyectos
+  const mobile = ['Compañero viajero', 'Cuentas claras']
 
   return (
     <React.Fragment>
@@ -46,12 +46,12 @@ function ProjectItem() {
               {item.name}
             </h3>
             <p className='text-s-text m-auto '>{item.info}</p>
-            <div className='flex justify-around items-center pt-3'>
+            <div className='flex justify-around items-center pt-3 flex-col gap-3 sm:flex-row'>
               {!mobile.includes(item.name) && (
                 <a
                   href={item.url}
                   target='_blank'
-                  className=' rounded-xl text-s-text font-w-b py-2 px-4 decoration-0 bg-btn-bg text-light  hover:scale-110 duration-300'
+                  className='text-dark bg-light text-s-text text-center font-w-b py-3 px-8 decoration-0 transition-all duration-500 border w-full sm:w-fit hover:bg-dark hover:text-light '
                   rel='noreferrer'
                 >
                   Visitar
@@ -70,7 +70,7 @@ function ProjectItem() {
         </article>
       ))}
     </React.Fragment>
-  );
+  )
 }
 
-export default ProjectItem;
+export default ProjectItem

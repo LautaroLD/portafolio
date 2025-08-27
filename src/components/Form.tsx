@@ -101,7 +101,7 @@ function Form() {
           />
         </label>
         <button
-          className='p-3 rounded-xl border-0 bg-btn-bg max-w-xs py-2.5 px-7 mx-auto font-w-b hover:bg-btn-bg hover:text-light hover:scale-110 hover:transition-all hover:duration-300 cursor-pointer'
+          className='text-dark bg-light text-s-text text-center font-w-b m-auto py-3 px-8 decoration-0 transition-all duration-500 border w-full sm:w-fit hover:bg-dark hover:text-light'
           type='submit'
         >
           Enviar

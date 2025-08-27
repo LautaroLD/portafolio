@@ -1,14 +1,14 @@
-import ButtonCv from '../components/ButtonCv';
-import MyImage from '../components/MyImage';
-import Social from '../components/Social';
-import Technologies from '../components/Technologies';
+import ButtonCv from '../ButtonCv'
+import MyImage from '../MyImage'
+import Social from '../Social'
+import Technologies from '../Technologies'
 
-export default function HomeScreen() {
+export default function PrincipalSection() {
   return (
-    <section className='bg-bg-gradient grid grid-cols-5 grid-flow-row  flex-grow  pt-[5%] pb-[1%] px-[7%] gap-6'>
+    <section className='bg-bg-gradient grid grid-cols-5 grid-flow-row py-6 px-10 gap-6 text-white'>
       <div className='col-span-6 sm:col-span-3 flex flex-col gap-2'>
         <h1 className='text-s-title-mobile m-0 sm:text-s-primary-title font-bold'>
-          Desarrollador frontend
+          Desarrollador web
         </h1>
         <p className='text-s-title font-medium m-0'>Lautaro Duran</p>
         <p className='text-s-text m-0 leading-6'>
@@ -27,10 +27,10 @@ export default function HomeScreen() {
         </div>
         <Social />
       </div>
-      <div className='col-span-6 flex items-center justify-center flex-col sm:gap-0 gap-10 mt-auto'>
+      <div className='col-span-6 flex items-center justify-center flex-col sm:gap-4 gap-10'>
         <Technologies />
         <ButtonCv />
       </div>
     </section>
-  );
+  )
 }

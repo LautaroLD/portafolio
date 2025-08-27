@@ -1,7 +1,6 @@
-import ProjectItem from '../components/ProjectItem';
-import Social from '../components/Social';
+import ProjectItem from '../ProjectItem'
 
-export default function ProjectsScreen() {
+export default function ProjectsSection() {
   return (
     <section className='pb-12 relative text-light px-[7%] bg-figures flex-grow flex flex-col items-center'>
       <div>
@@ -12,7 +11,6 @@ export default function ProjectsScreen() {
           <ProjectItem />
         </div>
       </div>
-      <Social />
     </section>
-  );
+  )
 }
