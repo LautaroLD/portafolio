@@ -5,13 +5,13 @@ import Technologies from '../Technologies'
 
 export default function PrincipalSection() {
   return (
-    <section className='bg-bg-gradient grid grid-cols-5 grid-flow-row py-6 px-10 gap-6 text-white'>
+    <section className='bg-bg-gradient grid grid-cols-5 grid-flow-row py-6 px-4 lg:px-10 gap-6 text-white text-center'>
       <div className='col-span-6 sm:col-span-3 flex flex-col gap-2'>
         <h1 className='text-s-title-mobile m-0 sm:text-s-primary-title font-bold'>
           Desarrollador web
         </h1>
         <p className='text-s-title font-medium m-0'>Lautaro Duran</p>
-        <p className='text-s-text m-0 leading-6'>
+        <p className='text-s-text m-0'>
           Con una fuerte cultura de trabajo y dedicación, utilizo mis
           habilidades en diversas tecnologías con disciplina, autonomía y
           razonamiento lógico para agregar valor a cada proyecto. Estoy

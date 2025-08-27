@@ -8,7 +8,7 @@ export default {
         f: ['Poppins', 'sans-serif'],
       },
       fontSize: {
-        's-text': '1rem',
+        's-text': '1.3rem',
         's-primary-title': '3.5rem',
         's-title-mobile': '2.7rem',
         's-title': '2rem',
