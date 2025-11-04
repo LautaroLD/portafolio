@@ -20,7 +20,6 @@ export default defineConfig({
           'vendor-react': ['react', 'react-dom'],
           'vendor-icons': ['react-icons'],
           'vendor-cloudinary': ['@cloudinary/react', '@cloudinary/url-gen'],
-          'vendor-primereact': ['primereact'],
         },
       },
     },

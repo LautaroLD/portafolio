@@ -1,49 +1,15 @@
 import { FormEvent, useRef, useState } from 'react'
-import { Toast } from 'primereact/toast'
 import emailjs from '@emailjs/browser'
 import { EMAILJS_CONFIG } from '../config/emailjs.config'
+import { toast } from 'react-toastify'
 
 function Form() {
   const formRef = useRef<HTMLFormElement | null>(null)
-  const toast = useRef<Toast>(null)
   const [isSubmitting, setIsSubmitting] = useState(false)
-
-  const show = ({
-    severity,
-    summary,
-    detail,
-  }: {
-    severity: 'success' | 'error' | 'info'
-    summary: string
-    detail: string
-  }) => {
-    toast.current &&
-      toast.current.show({
-        severity,
-        summary,
-        detail,
-        life: 4000,
-      })
-  }
 
   const handleSubmit = async (event: FormEvent) => {
     event.preventDefault()
     setIsSubmitting(true)
-
-    // Validar que EmailJS esté configurado
-    if (
-      EMAILJS_CONFIG.PUBLIC_KEY === 'YOUR_PUBLIC_KEY' ||
-      EMAILJS_CONFIG.SERVICE_ID === 'YOUR_SERVICE_ID' ||
-      EMAILJS_CONFIG.TEMPLATE_ID === 'YOUR_TEMPLATE_ID'
-    ) {
-      show({
-        severity: 'info',
-        summary: 'Configuración pendiente',
-        detail: 'Por favor, configura las credenciales de EmailJS en el archivo .env',
-      })
-      setIsSubmitting(false)
-      return
-    }
 
     try {
       // Enviar email usando EmailJS
@@ -55,20 +21,12 @@ function Form() {
       )
 
       if (result.status === 200) {
-        show({
-          detail: 'Me pondré en contacto contigo pronto. ¡Gracias por escribir!',
-          severity: 'success',
-          summary: '¡Mensaje enviado exitosamente!',
-        })
+        toast.success('Email enviado correctamente')
         formRef.current?.reset()
       }
     } catch (error) {
+      toast.error('Error al enviar email')
       console.error('Error al enviar email:', error)
-      show({
-        detail: 'Por favor, intenta nuevamente o contáctame directamente a duranlautarogabriel@gmail.com',
-        severity: 'error',
-        summary: 'Error al enviar el mensaje',
-      })
     } finally {
       setIsSubmitting(false)
     }
@@ -76,13 +34,12 @@ function Form() {
 
   return (
     <>
-      <form
-        ref={formRef}
-        onSubmit={handleSubmit}
-        className='w-full space-y-6'
-      >
+      <form ref={formRef} onSubmit={handleSubmit} className='w-full space-y-6'>
         <div className='space-y-2'>
-          <label htmlFor='name' className='block text-sm font-semibold text-slate-700 dark:text-gray-400 uppercase tracking-wider'>
+          <label
+            htmlFor='name'
+            className='block text-sm font-semibold text-slate-700 dark:text-gray-400 uppercase tracking-wider'
+          >
             Nombre
           </label>
           <input
@@ -97,7 +54,10 @@ function Form() {
         </div>
 
         <div className='space-y-2'>
-          <label htmlFor='email' className='block text-sm font-semibold text-slate-700 dark:text-gray-400 uppercase tracking-wider'>
+          <label
+            htmlFor='email'
+            className='block text-sm font-semibold text-slate-700 dark:text-gray-400 uppercase tracking-wider'
+          >
             Email
           </label>
           <input
@@ -112,7 +72,10 @@ function Form() {
         </div>
 
         <div className='space-y-2'>
-          <label htmlFor='message' className='block text-sm font-semibold text-slate-700 dark:text-gray-400 uppercase tracking-wider'>
+          <label
+            htmlFor='message'
+            className='block text-sm font-semibold text-slate-700 dark:text-gray-400 uppercase tracking-wider'
+          >
             Mensaje
           </label>
           <textarea
@@ -133,23 +96,48 @@ function Form() {
         >
           {isSubmitting ? (
             <>
-              <svg className='animate-spin h-5 w-5' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24'>
-                <circle className='opacity-25' cx='12' cy='12' r='10' stroke='currentColor' strokeWidth='4'></circle>
-                <path className='opacity-75' fill='currentColor' d='M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z'></path>
+              <svg
+                className='animate-spin h-5 w-5'
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 24 24'
+              >
+                <circle
+                  className='opacity-25'
+                  cx='12'
+                  cy='12'
+                  r='10'
+                  stroke='currentColor'
+                  strokeWidth='4'
+                ></circle>
+                <path
+                  className='opacity-75'
+                  fill='currentColor'
+                  d='M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z'
+                ></path>
               </svg>
               <span>Enviando...</span>
             </>
           ) : (
             <>
               <span>Enviar Mensaje</span>
-              <svg className='w-5 h-5' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
-                <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M12 19l9 2-9-18-9 18 9-2zm0 0v-8' />
+              <svg
+                className='w-5 h-5'
+                fill='none'
+                stroke='currentColor'
+                viewBox='0 0 24 24'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth={2}
+                  d='M12 19l9 2-9-18-9 18 9-2zm0 0v-8'
+                />
               </svg>
             </>
           )}
         </button>
       </form>
-      <Toast ref={toast} position='top-right' />
     </>
   )
 }

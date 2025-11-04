@@ -66,7 +66,7 @@
     "info": "Organizador de gastos donde el usuario puede establecer un presupuesto, cargar sus gastos y recibir una notificación confirmando la carga, al mismo tiempo puede ver un gráfico donde se ve cuanto representa cada gasto y el dinero disponible.",
     "img": "projects/cuentas-claras",
     "mobile": true,
-    "technologies": ["React Native", "TypeScript", "Expo", "Chart.js"]
+    "technologies": ["React Native", "TypeScript", "Expo"]
   },
   {
     "name": "Compañero viajero",
