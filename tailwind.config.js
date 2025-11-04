@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  darkMode: 'class',
 
   theme: {
     extend: {
@@ -20,27 +21,84 @@ export default {
       },
       colors: {
         dark: '#000000',
-        gray: '#1f1f1f',
-        'gray-light': '#dddddd',
+        gray: {
+          DEFAULT: '#1f1f1f',
+          light: '#dddddd',
+        },
         light: '#ffffff',
         bg: '#5975c9',
         title: '#8dc1fc',
         'btn-bg': '#123d6e',
         'btn-bg-hover': '#1111aa',
-        'pill-html': '#f0652a',
-        'pill-bt': '#7952b3',
-        'pill-css': '#34aadc',
-        'pill-git': '#f05133',
-        'pill-js': '#e8d44c',
-        'pill-react': '#61dbfb',
-        'pill-sass': '#ca669c',
       },
       backgroundImage: () => ({
         'bg-gradient': 'linear-gradient(0deg, #000000 0%, #5975c9 93%)',
+        'bg-gradient-light': 'linear-gradient(180deg, #f8fafc 0%, #e0e7ff 100%)',
       }),
+      animation: {
+        'float': 'float 3s ease-in-out infinite',
+        'fade-in-up': 'fadeInUp 0.6s ease-out forwards',
+        'slide-in-left': 'slideInLeft 0.8s ease-out forwards',
+        'slide-in-right': 'slideInRight 0.8s ease-out forwards',
+        'pulse': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'bounce': 'bounce 2s infinite',
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-20px)' },
+        },
+        fadeInUp: {
+          'from': {
+            opacity: '0',
+            transform: 'translateY(30px)',
+          },
+          'to': {
+            opacity: '1',
+            transform: 'translateY(0)',
+          },
+        },
+        slideInLeft: {
+          'from': {
+            opacity: '0',
+            transform: 'translateX(-50px)',
+          },
+          'to': {
+            opacity: '1',
+            transform: 'translateX(0)',
+          },
+        },
+        slideInRight: {
+          'from': {
+            opacity: '0',
+            transform: 'translateX(50px)',
+          },
+          'to': {
+            opacity: '1',
+            transform: 'translateX(0)',
+          },
+        },
+        pulse: {
+          '0%, 100%': {
+            opacity: '1',
+          },
+          '50%': {
+            opacity: '.5',
+          },
+        },
+        bounce: {
+          '0%, 20%, 50%, 80%, 100%': {
+            transform: 'translateY(0)',
+          },
+          '40%': {
+            transform: 'translateY(-10px)',
+          },
+          '60%': {
+            transform: 'translateY(-5px)',
+          },
+        },
+      },
     },
   },
   plugins: [],
 }
-
-

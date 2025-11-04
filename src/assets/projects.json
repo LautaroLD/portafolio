@@ -1,82 +1,125 @@
-[ 
+[
+  {
+    "name": "Financia Pyme",
+    "url": "https://financia-pyme.vercel.app/",
+    "repository": "https://github.com/LautaroLD/S1-23-CreditosPYMES",
+    "info": "FinanciaPYME es una plataforma digital diseñada para la gestión integral de créditos para pequeñas y medianas empresas (PyMEs). Su objetivo es ofrecer a los usuarios una experiencia clara, segura y organizada para administrar préstamos, pagos y documentos relacionados con el financiamiento empresarial.",
+    "img": "projects/financiapyme",
+    "mobile": false,
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Supabase",
+      "PostgreSQL"
+    ]
+  },
   {
     "name": "Redactiva",
     "url": "https://redactiva.vercel.app/",
     "repository": "https://github.com/LautaroLD/foro",
     "info": "Plataforma intuitiva para la creación, exploración y gestión de contenido. Ofrece herramientas avanzadas para publicar ideas, debates, consultas, descubrir tendencias y personalizar la experiencia del usuario dentro de una comunidad activa de escritores y lectores.",
     "img": "projects/redactiva",
-    "mobile": false
+    "mobile": false,
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Prisma",
+      "PostgreSQL"
+    ]
   },
   {
     "name": "Gestor 360",
     "url": "https://gestor-360.vercel.app/",
     "repository": "https://github.com/No-Country-simulation/s14-05-t-node-react",
-    "info": "Aplicación web para emprendedores, centrada en facilitar la gestión diaria de sus negocios. La aplicación se enfocará en simplificar las operaciones comerciales, financieras y de gestión de relaciones con los clientes, permitiendo a los emprendedores optimizar su tiempo y recursos. Desarrollada en Next.js con Typescript y Tailwind",
+    "info": "Aplicación web para emprendedores, centrada en facilitar la gestión diaria de sus negocios. La aplicación se enfocará en simplificar las operaciones comerciales, financieras y de gestión de relaciones con los clientes, permitiendo a los emprendedores optimizar su tiempo y recursos.",
     "img": "projects/gestor360",
-    "mobile": true
+    "mobile": true,
+    "technologies": [
+      "React Native",
+      "TypeScript",
+      "Tailwind CSS",
+      "Prisma",
+      "PostgreSQL"
+    ]
   },
   {
     "name": "estacionApp",
     "url": "https://estacion-app.netlify.app/",
     "repository": "https://github.com/No-Country-simulation/s13-04-t-node-react",
-    "info": "Aplicación que simplifica la búsqueda y reserva de estacionamientos donde un usuario puede generar una fuente de ingresos con su garaje alquilándolo a un conductor. Desarrollado en React, Typescript y Tailwind.",
+    "info": "Aplicación que simplifica la búsqueda y reserva de estacionamientos donde un usuario puede generar una fuente de ingresos con su garaje alquilándolo a un conductor.",
     "img": "projects/estacionApp",
-    "mobile": true
+    "mobile": true,
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Express"
+    ]
   },
   {
     "name": "Cuentas claras",
     "url": "",
     "repository": "https://github.com/LautaroLD/cuentasclaras",
-    "info": "Organizador de gastos donde el usuario puede establecer un presupuesto, cargar sus gastos y recibir una notificación confirmando la carga, al mismo tiempo puede ver un gráfico donde se ve cuanto representa cada gasto y el dinero disponible. Desarrollado en React Native y Typescript.",
+    "info": "Organizador de gastos donde el usuario puede establecer un presupuesto, cargar sus gastos y recibir una notificación confirmando la carga, al mismo tiempo puede ver un gráfico donde se ve cuanto representa cada gasto y el dinero disponible.",
     "img": "projects/cuentas-claras",
-    "mobile": true
+    "mobile": true,
+    "technologies": ["React Native", "TypeScript", "Expo", "Chart.js"]
   },
   {
     "name": "Compañero viajero",
     "url": "",
     "repository": "https://github.com/No-Country-simulation/s9-17-t-reactnative",
-    "info": "Aplicación móvil de carpooling que tiene como objetivo permitir a los docentes una mejor gestión respecto a su traslado a las instituciones educativas, donde puedan compartir gastos de movilidad y reducir la huella de carbono. Desarrollado en React Native y Typescript.",
+    "info": "Aplicación móvil de carpooling que tiene como objetivo permitir a los docentes una mejor gestión respecto a su traslado a las instituciones educativas, donde puedan compartir gastos de movilidad y reducir la huella de carbono.",
     "img": "projects/compañero-viajero",
-    "mobile": true
+    "mobile": true,
+    "technologies": ["React Native", "TypeScript", "Expo", "Firebase"]
   },
   {
     "name": "Pigmeo",
     "url": "https://pigmeoapp.netlify.app/",
     "repository": "https://github.com/No-Country-simulation/s8-14-t-mern",
-    "info": "Billetera virtual con opción de realizar pagos y transferencias por medio de QR, realizar recargas, llevar un registro de los movimientos y visualizar mercado crypto. Desarrollado con React.js, Axios, Tailwind  y Typescript.",
+    "info": "Billetera virtual con opción de realizar pagos y transferencias por medio de QR, realizar recargas, llevar un registro de los movimientos y visualizar mercado crypto.",
     "img": "projects/pigmeo",
-    "mobile": true
+    "mobile": true,
+    "technologies": ["React", "TypeScript", "Tailwind CSS", "Axios", "MongoDB"]
   },
   {
     "name": "MoviesGo",
     "url": "https://moviesgo.netlify.app/",
     "repository": "https://github.com/LautaroLD/moviesgo",
-    "info": "Sitio donde podemos ver películas con detalles de cada una, buscar por nombre, filtrar por géneros y agregar a listas de favoritos. Desarrollado con React.js, utiliza Redux, Axios y SASS para los estilos.",
+    "info": "Sitio donde podemos ver películas con detalles de cada una, buscar por nombre, filtrar por géneros y agregar a listas de favoritos.",
     "img": "projects/moviesGo",
-    "mobile": false
+    "mobile": false,
+    "technologies": ["React", "Redux", "Sass", "Axios", "TMDB API"]
   },
   {
     "name": "aTempo",
     "url": "https://atempoapp.netlify.app/",
     "repository": "https://github.com/LautaroLD/aTempo",
-    "info": " E-commerce, enfocado en calzados de danza, permite a los consumidores comprar y vender. En la app de A tempo, los usuarios pueden explorar catálogos de calzados, agregarlos a su carrito de compras, realizar pagos y recibir productos en sus domicilios. Desarrollado con React.js, Typescript, Redux, Axios y SASS para los estilos.",
+    "info": "E-commerce enfocado en calzados de danza, permite a los consumidores comprar y vender. Los usuarios pueden explorar catálogos de calzados, agregarlos a su carrito de compras, realizar pagos y recibir productos en sus domicilios.",
     "img": "projects/aTempo",
-    "mobile": false
+    "mobile": false,
+    "technologies": ["React", "TypeScript", "Redux", "Sass", "Axios"]
   },
   {
     "name": "Rock Paper Scissors",
     "url": "https://lautarold.github.io/r-p-s/",
     "repository": "https://github.com/LautaroLD/r-p-s",
-    "info": "Juego clásico de piedra, papel o tijera, desarrollado en React.js con Bootstrap y SASS. Contiene un contador para los puntos. También un modal con las reglas del juego y es responsive design.",
+    "info": "Juego clásico de piedra, papel o tijera con contador de puntos, modal con las reglas del juego y diseño responsive.",
     "img": "projects/rock-paper-scissors",
-    "mobile": false
+    "mobile": false,
+    "technologies": ["React", "Bootstrap", "Sass"]
   },
   {
     "name": "Task manager",
     "url": "https://lautarold.github.io/task-manager/",
     "repository": "https://github.com/LautaroLD/task-manager",
-    "info": "Sitio para crear una lista de tareas, podemos agregar, eliminar y marcar como completado cada ítem. Desarrollado en React.js utilizando Hooks y localStorage para permitir la persistencia de las tareas y sus estados. Para el estilo empleo SASS y cuenta con responsive design.",
+    "info": "Aplicación para crear listas de tareas con la posibilidad de agregar, eliminar y marcar como completado cada ítem. Utiliza localStorage para permitir la persistencia de las tareas y sus estados.",
     "img": "projects/task-manager",
-    "mobile": false
+    "mobile": false,
+    "technologies": ["React", "Sass", "LocalStorage"]
   }
 ]

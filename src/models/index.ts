@@ -5,4 +5,5 @@ export interface Project {
   info: string;
   mobile: boolean;
   img: string;
+  technologies: string[];
 }

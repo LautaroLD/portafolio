@@ -1,19 +1,19 @@
-import { FormEvent, useRef } from 'react'
+import { FormEvent, useRef, useState } from 'react'
 import { Toast } from 'primereact/toast'
-interface Form {
-  name: string
-  email: string
-  content: string
-}
+import emailjs from '@emailjs/browser'
+import { EMAILJS_CONFIG } from '../config/emailjs.config'
+
 function Form() {
   const formRef = useRef<HTMLFormElement | null>(null)
   const toast = useRef<Toast>(null)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
   const show = ({
     severity,
     summary,
     detail,
   }: {
-    severity: 'success' | 'error'
+    severity: 'success' | 'error' | 'info'
     summary: string
     detail: string
   }) => {
@@ -22,39 +22,56 @@ function Form() {
         severity,
         summary,
         detail,
-        life: 3000,
+        life: 4000,
       })
   }
-  const handleSubmit = (event: FormEvent) => {
+
+  const handleSubmit = async (event: FormEvent) => {
     event.preventDefault()
+    setIsSubmitting(true)
 
-    const formData = new FormData(event.target as HTMLFormElement)
-    const searchParams = new URLSearchParams()
-
-    for (const pair of formData.entries()) {
-      searchParams.append(pair[0], pair[1] as string)
+    // Validar que EmailJS esté configurado
+    if (
+      EMAILJS_CONFIG.PUBLIC_KEY === 'YOUR_PUBLIC_KEY' ||
+      EMAILJS_CONFIG.SERVICE_ID === 'YOUR_SERVICE_ID' ||
+      EMAILJS_CONFIG.TEMPLATE_ID === 'YOUR_TEMPLATE_ID'
+    ) {
+      show({
+        severity: 'info',
+        summary: 'Configuración pendiente',
+        detail: 'Por favor, configura las credenciales de EmailJS en el archivo .env',
+      })
+      setIsSubmitting(false)
+      return
     }
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: searchParams.toString(),
-    })
-      .then(() => {
+
+    try {
+      // Enviar email usando EmailJS
+      const result = await emailjs.sendForm(
+        EMAILJS_CONFIG.SERVICE_ID,
+        EMAILJS_CONFIG.TEMPLATE_ID,
+        formRef.current!,
+        EMAILJS_CONFIG.PUBLIC_KEY
+      )
+
+      if (result.status === 200) {
         show({
-          detail: 'Pronto recibirás una respuesta.',
+          detail: 'Me pondré en contacto contigo pronto. ¡Gracias por escribir!',
           severity: 'success',
-          summary: 'Se ha enviado tu mensaje.',
+          summary: '¡Mensaje enviado exitosamente!',
         })
         formRef.current?.reset()
+      }
+    } catch (error) {
+      console.error('Error al enviar email:', error)
+      show({
+        detail: 'Por favor, intenta nuevamente o contáctame directamente a duranlautarogabriel@gmail.com',
+        severity: 'error',
+        summary: 'Error al enviar el mensaje',
       })
-      .catch(() => {
-        show({
-          detail:
-            'Vuelve a intentarlo o envía tu mensaje directamente a duranlautarogabriel@gmail.com',
-          severity: 'error',
-          summary: 'Ha ocurrido un error.',
-        })
-      })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -62,53 +79,77 @@ function Form() {
       <form
         ref={formRef}
         onSubmit={handleSubmit}
-        className='flex flex-col w-10/12 max-w-[600px] gap-3 text-s-text m-auto'
-        name='contact'
-        method='post'
-        data-netlify='true'
-        data-netlify-recaptcha='true'
+        className='w-full space-y-6'
       >
-        <input type='hidden' name='form-name' value='contact' />
-        <label htmlFor='name'>
+        <div className='space-y-2'>
+          <label htmlFor='name' className='block text-sm font-semibold text-slate-700 dark:text-gray-400 uppercase tracking-wider'>
+            Nombre
+          </label>
           <input
-            className='w-full p-3 bg-transparent border-0 border-b border-b-light text-light placeholder-gray-light focus:outline-none focus:bg-gray'
+            className='w-full px-4 py-3 bg-slate-100 dark:bg-gray-900/50 border-2 border-slate-300 dark:border-gray-700 rounded-lg text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-gray-500 focus:outline-none focus:border-cyan-500 dark:focus:border-cyan-400 transition-all duration-300'
             id='name'
-            placeholder='Nombre'
+            placeholder='Tu nombre completo'
             type='text'
-            name='name'
+            name='from_name'
             required
+            disabled={isSubmitting}
           />
-        </label>
-        <label htmlFor='email'>
+        </div>
+
+        <div className='space-y-2'>
+          <label htmlFor='email' className='block text-sm font-semibold text-slate-700 dark:text-gray-400 uppercase tracking-wider'>
+            Email
+          </label>
           <input
             id='email'
-            className='w-full p-3 bg-transparent border-0 border-b border-b-light text-light placeholder-gray-light focus:outline-none focus:bg-gray'
-            placeholder='Email'
+            className='w-full px-4 py-3 bg-slate-100 dark:bg-gray-900/50 border-2 border-slate-300 dark:border-gray-700 rounded-lg text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-gray-500 focus:outline-none focus:border-cyan-500 dark:focus:border-cyan-400 transition-all duration-300'
+            placeholder='tu@email.com'
             type='email'
-            name='email'
+            name='reply_to'
             required
+            disabled={isSubmitting}
           />
-        </label>
-        <label htmlFor='content'>
+        </div>
+
+        <div className='space-y-2'>
+          <label htmlFor='message' className='block text-sm font-semibold text-slate-700 dark:text-gray-400 uppercase tracking-wider'>
+            Mensaje
+          </label>
           <textarea
-            id='content'
-            className='w-full p-3 bg-transparent border-0 border-b border-b-light text-light placeholder-gray-light focus:outline-none focus:bg-gray resize-none'
-            placeholder='Mensaje'
-            name='content'
-            cols={30}
-            rows={5}
+            id='message'
+            className='w-full px-4 py-3 bg-slate-100 dark:bg-gray-900/50 border-2 border-slate-300 dark:border-gray-700 rounded-lg text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-gray-500 focus:outline-none focus:border-cyan-500 dark:focus:border-cyan-400 transition-all duration-300 resize-none'
+            placeholder='Cuéntame sobre tu proyecto...'
+            name='message'
+            rows={6}
             required
+            disabled={isSubmitting}
           />
-        </label>
+        </div>
+
         <button
-          className='text-dark bg-light text-s-text text-center font-w-b m-auto py-3 px-8 decoration-0 transition-all duration-500 border w-full sm:w-fit hover:bg-dark hover:text-light'
+          className='btn-primary w-full px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-lg font-bold rounded-lg hover:shadow-2xl hover:shadow-cyan-500/30 dark:hover:shadow-cyan-500/50 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3'
           type='submit'
+          disabled={isSubmitting}
         >
-          Enviar
+          {isSubmitting ? (
+            <>
+              <svg className='animate-spin h-5 w-5' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24'>
+                <circle className='opacity-25' cx='12' cy='12' r='10' stroke='currentColor' strokeWidth='4'></circle>
+                <path className='opacity-75' fill='currentColor' d='M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z'></path>
+              </svg>
+              <span>Enviando...</span>
+            </>
+          ) : (
+            <>
+              <span>Enviar Mensaje</span>
+              <svg className='w-5 h-5' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
+                <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M12 19l9 2-9-18-9 18 9-2zm0 0v-8' />
+              </svg>
+            </>
+          )}
         </button>
-        <div data-netlify-recaptcha='true'></div>
       </form>
-      <Toast ref={toast} />
+      <Toast ref={toast} position='top-right' />
     </>
   )
 }
