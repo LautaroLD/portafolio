@@ -26,14 +26,14 @@ export default {
           light: '#dddddd',
         },
         light: '#ffffff',
-        bg: '#5975c9',
-        title: '#8dc1fc',
-        'btn-bg': '#123d6e',
-        'btn-bg-hover': '#1111aa',
+        bg: '#f5f5f5',
+        title: '#1f1f1f',
+        'btn-bg': '#333333',
+        'btn-bg-hover': '#555555',
       },
       backgroundImage: () => ({
-        'bg-gradient': 'linear-gradient(0deg, #000000 0%, #5975c9 93%)',
-        'bg-gradient-light': 'linear-gradient(180deg, #f8fafc 0%, #e0e7ff 100%)',
+        'bg-gradient': 'linear-gradient(0deg, #ffffff 0%, #f5f5f5 100%)',
+        'bg-gradient-light': 'linear-gradient(180deg, #ffffff 0%, #f9f9f9 100%)',
       }),
       animation: {
         'float': 'float 3s ease-in-out infinite',
@@ -101,4 +101,4 @@ export default {
     },
   },
   plugins: [],
-}
+};

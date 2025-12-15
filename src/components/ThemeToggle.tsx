@@ -1,17 +1,17 @@
-import { useTheme } from '../contexts/ThemeContext'
+import { useTheme } from '../contexts/ThemeContext';
 
 export default function ThemeToggle() {
-  const { theme, toggleTheme } = useTheme()
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <button
       onClick={toggleTheme}
-      className='fixed top-6 right-6 z-50 p-4 bg-white/10 dark:bg-gray-800/50 backdrop-blur-lg border border-gray-300/20 dark:border-gray-700/50 rounded-full shadow-lg hover:scale-110 transition-all duration-300 group'
+      className='fixed top-6 right-6 z-50 p-4 bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-900 rounded-full border border-gray-700 dark:border-gray-300 hover:bg-gray-700 dark:hover:bg-gray-300 transition-all duration-300 group'
       aria-label='Toggle theme'
     >
       {theme === 'light' ? (
         <svg
-          className='w-6 h-6 text-gray-800 group-hover:rotate-180 transition-transform duration-500'
+          className='w-6 h-6 dark:text-gray-900 text-gray-200 group-hover:rotate-180 transition-transform duration-500'
           fill='none'
           stroke='currentColor'
           viewBox='0 0 24 24'
@@ -25,7 +25,7 @@ export default function ThemeToggle() {
         </svg>
       ) : (
         <svg
-          className='w-6 h-6 text-yellow-400 group-hover:rotate-180 transition-transform duration-500'
+          className='w-6 h-6 text-amber-600 group-hover:rotate-180 transition-transform duration-500'
           fill='none'
           stroke='currentColor'
           viewBox='0 0 24 24'
@@ -39,5 +39,5 @@ export default function ThemeToggle() {
         </svg>
       )}
     </button>
-  )
+  );
 }

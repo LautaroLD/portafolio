@@ -1,7 +1,7 @@
 export default function ButtonCv() {
   return (
     <a
-      className='btn-primary group px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-lg font-bold rounded-lg hover:shadow-2xl hover:shadow-cyan-500/30 dark:hover:shadow-cyan-500/50 transition-all duration-300 inline-flex items-center gap-3 hover:scale-105'
+      className='btn-primary group px-8 py-4 bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-900 text-lg font-bold rounded-lg hover:bg-gray-700 dark:hover:bg-gray-300 transition-all duration-300 inline-flex items-center gap-3'
       href='https://drive.google.com/file/d/1AhQq2FOn-JL3xwNmSreW7IWah7KnRpT0/view?usp=drivesdk'
       target='_blank'
       rel='noreferrer'
@@ -14,5 +14,5 @@ export default function ButtonCv() {
         <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M17 8l4 4m0 0l-4 4m4-4H3' />
       </svg>
     </a>
-  )
+  );
 }
