@@ -26,7 +26,7 @@ function ProjectItem() {
             <div className={`grid gap-8 ${item.mobile ? 'lg:grid-cols-5' : 'lg:grid-cols-2'}`}>
               {/* Image container */}
               <div className={`${item.mobile ? 'lg:col-span-2' : 'lg:col-span-1'} relative overflow-hidden rounded-xl`}>
-                <div className={`relative ${item.mobile ? 'aspect-square' : 'aspect-video'} overflow-hidden rounded-xl border-2 border-gray-300 dark:border-gray-700`}>
+                <div className={`relative ${item.mobile ? 'aspect-square' : 'aspect-video'} overflow-hidden rounded-xl`}>
                   <LazyImage
                     cldImg={optimizedImage}
                     alt={`${item.name} preview`}

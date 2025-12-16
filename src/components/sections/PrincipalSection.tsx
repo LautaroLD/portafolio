@@ -52,7 +52,7 @@ function PrincipalSection() {
             <ButtonCv />
             <a
               href='#projects'
-              className='group px-8 py-4 rounded-lg border-2 border-gray-700 dark:border-gray-400 text-gray-700 dark:text-gray-400 font-semibold hover:bg-gray-700 dark:hover:bg-gray-400 hover:text-white dark:hover:text-gray-900 transition-all duration-300 flex items-center gap-2'
+              className='group w-full md:w-auto px-8 py-4 rounded-lg border-2 border-gray-700 dark:border-gray-400 text-gray-700 dark:text-gray-400 font-semibold hover:bg-gray-700 dark:hover:bg-gray-400 hover:text-white dark:hover:text-gray-900 transition-all duration-300 flex items-center justify-center gap-2'
             >
               Ver Proyectos
               <svg className='w-5 h-5 group-hover:translate-x-1 transition-transform' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
@@ -69,11 +69,11 @@ function PrincipalSection() {
         {/* Right side - Image and tech stack */}
         <div className='space-y-8 observe opacity-0' style={{ animationDelay: '0.2s' }}>
           <div className='relative group'>
-            <div className='relative w-80 h-80 mx-auto'>
-              <div className='absolute inset-0 border-4 border-gray-400 dark:border-gray-600 rounded-full' />
-              <div className='absolute inset-4 border-4 border-gray-300 dark:border-gray-700 rounded-full' />
-              <MyImage />
-            </div>
+            {/* <div className='relative mx-auto'> */}
+            {/* <div className='absolute inset-0 border-4 border-gray-400 dark:border-gray-600 rounded-full' />
+              <div className='absolute inset-4 border-4 border-gray-300 dark:border-gray-700 rounded-full' /> */}
+            <MyImage />
+            {/* </div> */}
           </div>
 
           <div className='glassmorphism-strong rounded-2xl p-8 space-y-4'>
@@ -82,13 +82,6 @@ function PrincipalSection() {
             </h3>
             <Technologies />
           </div>
-        </div>
-      </div>
-
-      {/* Scroll indicator */}
-      <div className='absolute bottom-10 left-1/2 transform -translate-x-1/2 scroll-indicator'>
-        <div className='w-6 h-10 border-2 border-gray-700 dark:border-gray-400 rounded-full flex items-start justify-center p-2'>
-          <div className='w-1 h-3 bg-gray-700 dark:bg-gray-400 rounded-full animate-bounce' />
         </div>
       </div>
     </section>

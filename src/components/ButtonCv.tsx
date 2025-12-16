@@ -1,7 +1,7 @@
 export default function ButtonCv() {
   return (
     <a
-      className='btn-primary group px-8 py-4 bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-900 text-lg font-bold rounded-lg hover:bg-gray-700 dark:hover:bg-gray-300 transition-all duration-300 inline-flex items-center gap-3'
+      className='btn-primary w-full md:w-auto justify-center group px-8 py-4 bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-900 text-lg font-bold rounded-lg hover:bg-gray-700 dark:hover:bg-gray-300 transition-all duration-300 inline-flex items-center gap-3'
       href='https://drive.google.com/file/d/1AhQq2FOn-JL3xwNmSreW7IWah7KnRpT0/view?usp=drivesdk'
       target='_blank'
       rel='noreferrer'

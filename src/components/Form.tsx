@@ -43,7 +43,7 @@ function Form() {
             Nombre
           </label>
           <input
-            className='w-full px-4 py-3 bg-gray-100 dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-700 rounded-lg text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 transition-all duration-300'
+            className='w-full px-4 py-3 bg-white dark:bg-gray-900 border-2 border-gray-300 dark:border-gray-700 rounded-lg text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 transition-all duration-300'
             id='name'
             placeholder='Tu nombre completo'
             type='text'
@@ -62,7 +62,7 @@ function Form() {
           </label>
           <input
             id='email'
-            className='w-full px-4 py-3 bg-gray-100 dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-700 rounded-lg text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 transition-all duration-300'
+            className='w-full px-4 py-3 bg-white dark:bg-gray-900 border-2 border-gray-300 dark:border-gray-700 rounded-lg text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 transition-all duration-300'
             placeholder='tu@email.com'
             type='email'
             name='reply_to'
@@ -80,7 +80,7 @@ function Form() {
           </label>
           <textarea
             id='message'
-            className='w-full px-4 py-3 bg-gray-100 dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-700 rounded-lg text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 transition-all duration-300 resize-none'
+            className='w-full px-4 py-3 bg-white dark:bg-gray-900 border-2 border-gray-300 dark:border-gray-700 rounded-lg text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 transition-all duration-300 resize-none'
             placeholder='Cuéntame sobre tu proyecto...'
             name='message'
             rows={6}
