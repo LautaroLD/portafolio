@@ -57,7 +57,7 @@ function ProjectItem() {
                       {item.name}
                     </h3>
                     <div className='flex gap-2'>
-                      {!mobile.includes(item.name) && (
+                      {!item.mobile && (
                         <div className='w-3 h-3 rounded-full bg-green-500 animate-pulse' title='Live' />
                       )}
                     </div>
@@ -89,7 +89,7 @@ function ProjectItem() {
 
                 {/* Action buttons */}
                 <div className='flex flex-wrap gap-4 pt-4'>
-                  {!mobile.includes(item.name) && (
+                  {!item.mobile && (
                     <a
                       href={item.url}
                       target='_blank'
