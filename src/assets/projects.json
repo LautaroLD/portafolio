@@ -1,6 +1,6 @@
 [
   {
-    "name": "Organizador 360",
+    "name": "DevCore",
     "url": "https://organizador-360.vercel.app/",
     "repository": "https://github.com/LautaroLD/organizador-360",
     "info": "Plataforma web de gestión colaborativa de proyectos. Integra chat en tiempo real mediante Supabase Realtime, sincronización con Google Calendar, sistema de roles para gestión de equipos, notificaciones push y base de conocimiento para centralizar recursos. Incluye sistema de invitaciones y ofrece temas claro/oscuro.",
@@ -16,9 +16,26 @@
     ]
   },
   {
+    "name": "Sayso",
+    "url": "https://cms-testimonials.vercel.app",
+    "repository": "https://github.com/s11-25-equipo-48-WebApp/frontend",
+    "showcase_url": "https://nocountry.tech/simulacion-laboral-noviembre-2025/cmhpt18up00d5k001ea05vsrz",
+    "info": "Plataforma de gestión de testimonios que permite a organizaciones centralizar la recepción, revisión y publicación de testimonios de usuarios. Ofrece un panel administrativo con métricas de aprobación, categorías, biblioteca multimedia y control de permisos para editores, brindando una experiencia clara y organizada para administrar contenido generado por clientes o colaboradores.",
+    "img": "projects/sayso",
+    "mobile": false,
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Supabase",
+      "PostgreSQL"
+    ]
+  },
+  {
     "name": "Financia Pyme",
     "url": "https://financia-pyme.vercel.app/",
     "repository": "https://github.com/LautaroLD/S1-23-CreditosPYMES",
+    "showcase_url": "https://nocountry.tech/simulacion-laboral-septiembre-2025/cmg463mmi00jtm701vlz1okz2",
     "info": "FinanciaPYME es una plataforma digital diseñada para la gestión integral de créditos para pequeñas y medianas empresas (PyMEs). Su objetivo es ofrecer a los usuarios una experiencia clara, segura y organizada para administrar préstamos, pagos y documentos relacionados con el financiamiento empresarial.",
     "img": "projects/financiapyme",
     "mobile": false,
