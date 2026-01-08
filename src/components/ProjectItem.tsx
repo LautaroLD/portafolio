@@ -7,7 +7,6 @@ import LazyImage from './LazyImage';
 
 function ProjectItem() {
   const projects: Project[] = proyectos;
-  const mobile = ['Compañero viajero', 'Cuentas claras'];
 
   return (
     <React.Fragment>
