@@ -1,7 +1,7 @@
 [
   {
-    "name": "DevCore",
-    "url": "https://organizador-360.vercel.app/",
+    "name": "Veenzo",
+    "url": "https://www.veenzo.app/",
     "repository": "https://github.com/LautaroLD/organizador-360",
     "info": "Plataforma web de gestión colaborativa de proyectos. Integra chat en tiempo real mediante Supabase Realtime, sincronización con Google Calendar, sistema de roles para gestión de equipos, notificaciones push y base de conocimiento para centralizar recursos. Incluye sistema de invitaciones y ofrece temas claro/oscuro.",
     "img": "projects/organizador",
