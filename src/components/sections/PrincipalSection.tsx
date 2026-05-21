@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import ButtonCv from '../ButtonCv';
-import MyImage from '../MyImage';
 import Social from '../Social';
 import Technologies from '../Technologies';
 
@@ -43,9 +42,10 @@ function PrincipalSection() {
           </div>
 
           <p className='text-gray-700 dark:text-gray-400 text-lg leading-relaxed max-w-2xl'>
-            Apasionado por crear experiencias web excepcionales con código limpio y
-            diseño innovador. Especializado en React, TypeScript y tecnologías modernas
-            para construir aplicaciones escalables y de alto rendimiento.
+            Desarrollador Full Stack orientado a la creación de aplicaciones web escalables con el ecosistema de
+            JavaScript, especializándome en Next.js, Nest.js y TypeScript. Experiencia en la construcción de
+            soluciones de punta a punta, integrando servicios BaaS (Supabase) y arquitecturas backend
+            modernas con Prisma.
           </p>
 
           <div className='flex flex-wrap gap-4 pt-4'>
@@ -68,14 +68,6 @@ function PrincipalSection() {
 
         {/* Right side - Image and tech stack */}
         <div className='space-y-8 observe opacity-0' style={{ animationDelay: '0.2s' }}>
-          <div className='relative group'>
-            {/* <div className='relative mx-auto'> */}
-            {/* <div className='absolute inset-0 border-4 border-gray-400 dark:border-gray-600 rounded-full' />
-              <div className='absolute inset-4 border-4 border-gray-300 dark:border-gray-700 rounded-full' /> */}
-            <MyImage />
-            {/* </div> */}
-          </div>
-
           <div className='glassmorphism-strong rounded-2xl p-8 space-y-4'>
             <h3 className='text-gray-900 dark:text-white text-xl font-semibold text-center mb-6'>
               Stack Tecnológico
