@@ -23,11 +23,11 @@ function PrincipalSection() {
 
   return (
     <section className='relative min-h-screen flex items-center justify-center overflow-hidden bg-white dark:bg-gray-950 transition-colors duration-500'>
-      {/* Animated background orbs - removed */}
+      {/* Animated background orbs - removed */ }
       <div className='absolute inset-0 overflow-hidden' />
 
       <div className='relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 py-20 px-6 lg:px-20 max-w-7xl mx-auto items-center'>
-        {/* Left side - Text content */}
+        {/* Left side - Text content */ }
         <div className='space-y-6 observe opacity-0'>
           <div className='space-y-2'>
             <p className='text-gray-600 dark:text-gray-400 text-lg font-medium tracking-wider uppercase'>
@@ -56,7 +56,7 @@ function PrincipalSection() {
             >
               Ver Proyectos
               <svg className='w-5 h-5 group-hover:translate-x-1 transition-transform' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
-                <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M17 8l4 4m0 0l-4 4m4-4H3' />
+                <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={ 2 } d='M17 8l4 4m0 0l-4 4m4-4H3' />
               </svg>
             </a>
           </div>
@@ -66,8 +66,8 @@ function PrincipalSection() {
           </div>
         </div>
 
-        {/* Right side - Image and tech stack */}
-        <div className='space-y-8 observe opacity-0' style={{ animationDelay: '0.2s' }}>
+        {/* Right side - Image and tech stack */ }
+        <div className='space-y-8 observe opacity-0' style={ { animationDelay: '0.2s' } }>
           <div className='glassmorphism-strong rounded-2xl p-8 space-y-4'>
             <h3 className='text-gray-900 dark:text-white text-xl font-semibold text-center mb-6'>
               Stack Tecnológico
